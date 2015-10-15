@@ -1,0 +1,472 @@
+html, body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, fieldset, input {
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 12px;
+}
+html, body{
+	height: 100%;
+	font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+	/* background-color: #20b7a8; */
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+	html {
+		font-size: 14px
+	}
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+	html {
+		font-size: 16px
+	}
+}
+@media screen and (min-width:640px) {
+	html {
+		font-size: 20px
+	}
+}
+img{
+	max-width: 100%;
+}
+.text-r{
+	text-align: right;
+}
+.text-l{
+	text-align: left;
+}
+.hide, .none {
+	display: none;
+}
+@keyframes fromTop {
+	0% {
+		transform: translateY(-100%);
+		-webkit-transform: translateY(-100%);
+		-ms-transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+	}
+}
+ @-webkit-keyframes fromTop {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+@keyframes fromRight{
+	0% {
+		transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+	}
+}
+@-webkit-keyframes fromRight{
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+	}
+}
+@keyframes fromBottom {
+	0% {
+		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
+		-ms-transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+	}
+}
+@-webkit-keyframes fromBottom {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+@keyframes fromLeft{
+	0% {
+		transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		/*-ms-transform: translateX(-100%);*/
+	}
+	100% {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		/*-ms-transform: translateX(0);*/
+	}
+}
+ @-webkit-keyframes fromLeft{
+	0% {
+		-webkit-transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+	}
+}
+.bodybg {
+	min-width: 320px;
+	/* min-height: 500px; */
+	background-color: #20b7a8;
+}
+.page{
+	height: 100%;
+	text-align: center;
+	position: relative;
+	/* background-color: #20b7a8; */
+}
+.page:before{
+	content: "";
+	width: 0;
+	/* height: 100%; */
+	font-size: 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.page h2{
+	border-radius: 20px;
+	padding: 8px;
+	font-size: 1.4rem;
+	line-height: 1;
+	color:#004a19;
+	background-color: #38c9bb;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	top:20px;
+	left:20%;
+}
+.page .cloud img{
+	max-width: 30%;
+	margin: 20% 10% 10% 10%;
+	/*animation: fromRight 1s;*/
+}
+.page .img img{
+	/*animation: fromLeft 1s;*/
+}
+.page ul {
+	padding-left: 0;
+	list-style: none;
+}
+.page dl, .anim dl {
+	font-size: 1rem;
+	color:#fff;
+	margin:12% 0 5%;
+	/*animation: fromBottom 1s;*/
+}
+.pp h2,.p-1 h2, .p-2 h2, .anim h2{
+	animation: fromTop 1s;
+	-webkit-animation: fromTop 1s;
+}
+.pp .cloud img,.p-1 .cloud img, .p-2 .cloud img, .anim .cloud img{
+	animation: fromRight 1s;
+	-webkit-animation: fromRight 1s;
+}
+.pp .img img,.p-1 .img img, .p-2 .img img, .anim .img img{
+	animation: fromLeft 1s;
+	-webkit-animation: fromLeft 1s;
+}
+.anim dl {
+	animation: fromBottom 1s;
+	-webkit-animation: fromBottom 1s;
+}
+.page dl dt{
+	font-size:1.8rem;
+	padding-bottom:8%;
+}
+.page dd{
+	text-align: center;
+	padding-top:5px;
+}
+.page .align-c dd{
+	text-align:center;
+}
+.page .next,.page .prev{
+	display: inline-block;
+	width:1em;
+	height:2em;
+	background: url(../../images/intro/arrow_left.png) left center no-repeat;
+	background-size:100% auto;
+	position: absolute;
+	left:10px;
+	top:50%;
+	margin-top:-1em;
+	z-index: 999999;
+}
+.page .next{
+	background-image:  url(../../images/intro/arrow_right.png);
+	left:auto;
+	right:10px;
+}
+.page .nextPage {
+	position: absolute;
+	width: 100%;
+	bottom: 25px;
+	text-align: center;
+}
+.page .arrow-next {
+	display: inline-block;
+	width: 2.5rem;
+	height: 1rem;
+	background: url(../../images/intro/arrow_next.png) left center no-repeat;
+	position: absolute;
+	left: 50%;
+	/* top: 15px; */
+	margin-left: -1.25rem;
+	background-size: cover;
+	vertical-align: middle;
+}
+.page-main{
+	display: inline-block;
+	margin-top: 5rem;
+	/* vertical-align: middle; */
+	width: 84%;
+	/* height: 100%; */
+	box-sizing: border-box;
+}
+.page-main .img img {
+	width: 60%;
+}
+.pp {
+	/* height: 100%; */
+	/* min-height: 500px; */
+	/* padding-bottom: 60px; */
+	background: #003264 url(../../images/intro/intro-p0-bg.png) center bottom no-repeat;
+	background-size: cover;
+}
+.pp .img {
+	position: relative;
+	margin: 0 auto;
+	width: 20rem;
+	animation: fromLeft 1s;
+}
+.pp .img img {
+	width: 100%;
+}
+.pp .img h4 {
+	position: absolute;
+	top: 9rem;
+	padding-left: 4.5rem;
+	color: #fff;
+	font-size: 1.4rem;
+}
+.pp .pp-note {
+	margin-top: 1.5rem;
+	color: #86def7;
+	text-align: center;
+}
+
+
+.p-1 {
+	background-color: #49b36d;
+}
+.p-2 {
+	background-color: #1da3d6;
+}
+.pp .p-title {
+	margin: auto;
+	/* padding-top: 4rem; */
+	padding-bottom: 4rem;
+	font-size: 1rem;
+	color: #86def7;
+	line-height: 2;
+	animation: fromTop 1s;
+}
+.p-1 ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.p-1 li {
+	/* width: 20rem; */
+	margin-top: .5rem;
+	height: 6rem;
+	text-align: left;
+	color: #fff;
+}
+.p-1 li:nth-child(2n+1) {
+	animation: fromLeft 1s;
+}
+.p-1 li:nth-child(2n) {
+	animation: fromRight 1s;
+}
+.p-1 li img {
+   float: left;
+   height: 80%;
+}
+.p-1 li h3 {
+    padding-top: 1.2rem;
+    margin-left: 7rem;
+    font-size: 1.4rem;
+}
+.p-1 li p {
+    margin: 0 0 0 7rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.p-1 .p0-right {
+	text-align: right;
+}
+.p-1 .p0-right h3 {
+	margin-right: 7rem;
+}
+.p-1 .p0-right p {
+	margin: 0 7rem 0 0;
+}
+.p-1 .p0-right img {
+	float: right;
+}
+.p-1 h2{
+	background-color: #84dea2;
+}
+.p-1 .intro-p-spirit{
+	height: 6rem;
+	text-align: right;
+}
+.p-1 .intro-p-spirit img{
+	height: 90%;
+}
+.p-2 section {
+	margin: auto;
+	float: left;
+	width: 100%;
+	background-color: #3dbff1;
+	text-align: left;
+	color: #fff;
+}
+.p-2 section img {
+	float: left;
+	height: 50%;
+	margin: 2.5rem 1.6rem 0;
+}
+.p-2 section .fr {
+	float: right;
+}
+.p-2 section h4 {
+    font-size: 1.6rem;
+    margin: 2.5rem 0 1rem 12rem;
+}
+.p-2 section p {
+    margin-left: 12rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.p-2 .p2-sec1 {
+	height: 15%;
+	background-color: #1da3d6;
+	animation: fromTop 1s;
+}
+.p-2 .p2-sec1 h2 {
+	border-radius: 20px;
+	padding: 5px 0;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	color: #004a19;
+	background-color: #48c2f0;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+.p-2 .p2-sec2 {
+	height: 25%;
+	border-bottom: 3px solid #1da3d6;
+	animation: fromLeft 1s;
+}
+.p-2 .p2-sec3 {
+	height: 25%;
+	border-bottom: 3px solid #1da3d6;
+	animation: fromRight 1s;
+}
+.p-2 .p2-sec3 h4{
+    margin-left: 2rem;
+    margin-right: 12rem;
+    text-align: left;
+}
+.p-2 .p2-sec3 p{
+    margin-left: 2rem;
+    margin-right: 11rem;
+    text-align: left;
+}
+.p-2 .p2-sec4 {
+	height: 25%;
+	animation: fromLeft 1s;
+}
+.p-2 .p2-sec5 {
+	height: 9%;
+	background-color: #1da3d6;
+	/* padding-top: 1.5rem; */
+}
+
+/*关于我们*/
+.banner-img img{
+	width: 100%;
+	vertical-align: top;
+}
+.about-us section{
+	margin:20px 15px;
+	color:#666;
+	font-size: 1.4rem;
+}
+.about-us section h3{
+	text-align: center;
+	margin-bottom:20px;
+}
+.about-us section .part p{
+	text-indent: 2em;
+	line-height: 1.5;
+	position: relative;
+	margin:20px 0;
+}
+.about-us section .part p:before{
+	content: '';
+	width:0.6em;
+	height: 0.6em;
+	background-color: #36b886;
+	border-radius: 50%;
+	position: absolute;
+	left:0;
+	top:.4em;
+}
+.about-us section dl{
+	margin-top:5px;
+	padding-bottom:10px;
+	border:1px solid #ccc;
+	border-top:0;
+	text-align: center;
+	margin-bottom:30px;
+}
+.about-us section dl dt.tit{
+	color:#3d9d30;
+	font-weight: bold;
+	text-align: center;
+	padding:10px 10px 4px;
+}
+.about-us section dl dt.tit .arrow{
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 1.5em;
+	min-height: .5em;
+	background: url(../../images/intro/icon_orange_arrow.png) left center no-repeat;
+	background-size : auto 80%;
+}
+.about-us section dd{
+	padding:6px 10px 0;
+	font-size: 1.2rem;
+	line-height: 1.8;
+}
+

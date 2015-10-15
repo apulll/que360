@@ -1,0 +1,183 @@
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+    html {
+        font-size: 14px
+    }
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px
+    }
+}
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px
+    }
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+    color: #666;
+}
+.l_head p{
+
+    height: 1.7rem;
+     padding-top: 1.3rem;
+    text-align: center;
+    font: 1rem "microsoft yahei";
+    font: 1.3rem "microsoft yahei";
+}
+.pay_fund{
+    width: 100%;
+    height: 9.45rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+.pay_fund_str{
+    display: block;
+    margin-top: 3rem;
+    height: 1.5rem;
+    text-align: center;
+    font: 1.5rem "microsoft yahei";
+}
+.pay_fund_num{
+    display: block;
+    margin-top: 0.75rem;
+    text-align: center;
+    height: 1.5rem;
+    font: 1.5rem "microsoft yahei";
+}
+.pay_fund_num span{
+    color: #ff8e0c;
+}
+.pay_choice{
+    width: 100%;
+    height: 38rem;
+    padding-left: 4.06%;
+    padding-right: 4.06%;
+}
+.pay_choice p{
+    height: 4rem;
+    padding-top: 1.3rem;
+    font: 1.4rem "microsoft yahei";
+}
+.zhifubao{
+    position: relative;
+    width: 100%;
+    height: 8.25rem;
+    border: 1px solid #7ad097;
+    border-radius: 5px;
+    margin-right: 0;
+    padding: 2rem 3.125% 2rem 6.25%;
+}
+.zhifubao li:nth-of-type(1){
+    position: absolute;
+    left: 6.25%;
+    top: 1.775rem;
+    display: inline-block;
+    width:  4.85rem;
+    height: 4.7rem;
+    background-size: cover;
+    background-image: url(../../images/zhifubao-pay.jpg);
+    vertical-align: middle;
+    float: left;
+}
+.zhifubao li:nth-of-type(2){
+    position: absolute;
+    left: 26.56%;
+    top: 3.5rem;
+    display: inline-block;
+    float: left;
+    font: 1.2rem "microsoft yahei";
+}
+.zhifubao li:nth-of-type(3){
+    position: absolute;
+    top: 3.05rem;
+    right: 6.25%;
+    display: inline-block;
+    width:  2.15rem;
+    height: 2.15rem;
+    /* background-size: cover;
+    background-image: url(../../images/no.jpg); */
+    vertical-align: middle;
+    float: right;
+}
+.weixin{
+    position: relative;
+    margin-top: 1.4rem;
+    width: 100%;
+    height: 8.25rem;
+    border: 1px solid #7ad097;
+    border-radius: 5px;
+    padding: 2rem 1rem 2rem 2rem;
+}
+.weixin li:nth-of-type(1){
+    position: absolute;
+    left: 6.25%;
+    top: 1.775rem;
+    display: inline-block;
+    width:  4.85rem;
+    height: 4.7rem;
+    background-size: cover;
+    background-image: url(../../images/weixin-pay.jpg);
+    vertical-align: middle;
+    float: left;
+}
+.weixin li:nth-of-type(2){
+    position: absolute;
+    left: 26.56%;
+    top: 3.5rem;
+    display: inline-block;
+    float: left;
+    font: 1.2rem "microsoft yahei";
+}
+.weixin li:nth-of-type(3){
+    position: absolute;
+    top: 3.05rem;
+    right: 6.25%;
+    display: inline-block;
+    width:  2.15rem;
+    height: 2.15rem;
+    /* background-size: cover;
+    background-image: url(../../images/no.jpg); */
+    vertical-align: middle;
+    float: right;
+}
+.btn{
+    margin-top: 10.83rem;
+    width: 81.25%;
+    height: 3rem;
+    background-color: #7ad097;
+    margin-left: 9.38%;
+    font: 1.1rem "microsoft yahei";
+    color: #fff;
+}
+
+.iradio_minimal-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 2.15rem;
+    height: 2.15rem;
+    background: url(no.jpg) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal-blue.checked {
+        display: inline-block;
+        *display: inline;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0;
+        width: 2.15rem;
+        height: 2.15rem;
+        background: url(ok.jpg) no-repeat;
+        border: none;
+        cursor: pointer;
+    }

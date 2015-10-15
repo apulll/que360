@@ -1,0 +1,107 @@
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+    html {
+        font-size: 14px
+    }
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px
+    }
+}
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px
+    }
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+    color: #666;
+}
+p{
+    padding-left: 3.91%;
+    padding-right: 3.91%;
+    font: 1.2rem "微软雅黑";
+}
+.message{
+    padding-left: 3.91%;
+    padding-right: 3.91%;
+    font: 1.2rem "微软雅黑";
+}
+.l_head p{
+    height: 1.7rem;
+    padding-top: 1.3rem;
+    text-align: center;
+    font: 1rem "microsoft yahei";
+    font: 1.3rem "microsoft yahei";
+}
+.l_head a{
+    position: absolute;
+    right: 3.91%;
+    top: 1rem;
+    display: block;
+    width: 2.35rem;
+    height: 2.6rem;
+    background-image: url(../../images/home.jpg);
+    background-size: cover;
+}
+.main{
+    width: 100%;
+    height: 47.5rem;
+    background-color: #ececec;
+    padding-top: 0.8rem
+}
+.main a{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 3.25rem;
+    margin-bottom: 0.8rem;
+    background-color: #fff;
+    line-height: 3.25rem;
+    border-top: 1px solid #d2d0d0;
+    border-bottom: 1px solid #d2d0d0;
+    cursor: pointer;
+    text-decoration: none;
+    color: #6a6a6a;
+}
+.main a span{
+    float: right;
+    margin-right: 8.59%;
+    color: #cacaca;
+}
+.main a i{
+    position: absolute;
+    right: 3.91%;
+    top: 1.2rem;
+    display: block;
+    width: 0.5rem;
+    height: 0.85rem;
+    background-image: url(../../images/icon-chose.png);
+    background-size: cover;
+}
+#tj{
+    width: 81.25%;
+    height: 3rem;
+    border: 1px solid #3ec36b;
+    background-color: #3ec36b;
+    line-height: 3rem;
+    margin-top: 4.7rem;
+    margin-left: 9.375%;
+    border-radius: 5px;
+    padding: 0;
+}
+#tj input{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #3ec36b;
+    background-color: #3ec36b;
+    border-radius: 5px;
+    font: 1.2rem "微软雅黑";
+    color: #fff;
+}

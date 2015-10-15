@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/content/m-social.css" rel="stylesheet">
+	<title>欢雀 订单查询</title>
+</head>
+
+<body>
+	<!-- <h2 class="o-q-nav">
+		<i class="">返回</i><a href="stu_ask_list.html" class="fr">全部状态</a>
+	</h2> -->
+	<header class="o-head">
+		<i class="i-back" onclick="history.back();"></i>
+		<select name="" id="" style="border:none;padding:5px;">
+			<option value="1">全部状态 </option>
+		</select>
+		<!-- <a href="#">全部状态 <i class="triangle-down"></i></a> -->
+	</header>
+	<hr class="o-hr">
+	<div class="o-q-content">
+		<p class="o-list">
+			<span class="time">2015年6月</span>
+			<span>缴纳人数200人</span>
+			<span class="s-detail"><i class="m-i-detail"></i>点击人名查看明细</span>
+		</p>
+		<table class="o-tbl-detail">
+			<tbody>
+				<tr class="tr-head">
+					<td>姓名</td>
+					<td>缴纳总额(元)</td>
+					<td>状态</td>
+				</tr>
+				<tr>
+					<td><a href="#">张耀扬</a></td>
+					<td>6800.00</td>
+					<td>等待财务确认到款</td>
+				</tr>
+				<tr>
+					<td><a href="#">张敬轩</a></td>
+					<td>5800.00</td>
+					<td>待审核</td>
+				</tr>
+				<tr>
+					<td><a href="#">张惠妹</a></td>
+					<td>1800.00</td>
+					<td>等待付款</td>
+				</tr>
+				<tr>
+					<td><a href="#">张柏芝</a></td>
+					<td>8600.00</td>
+					<td>等待客服办理业务</td>
+				</tr>
+				<tr>
+					<td><a href="#">张学友</a></td>
+					<td>9600.00</td>
+					<td>业务办理中</td>
+				</tr>
+				<tr>
+					<td><a href="#">张信哲</a></td>
+					<td>7600.00</td>
+					<td>反馈信息</td>
+				</tr>
+				<tr>
+					<td><a href="#">张卫健</a></td>
+					<td>3600.00</td>
+					<td>办理成功</td>
+				</tr>
+				<tr>
+					<td><a href="#">张洪亮</a></td>
+					<td>4600.00</td>
+					<td>办理失败</td>
+				</tr>
+				<tr>
+					<td><a href="#">张家辉</a></td>
+					<td>3600.00</td>
+					<td>办理成功</td>
+				</tr>
+				<tr>
+					<td><a href="#">张靓颖</a></td>
+					<td>4600.00</td>
+					<td>办理失败</td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="padding: 15px 0; text-align: center;" id="loadMore">
+			<span>加载更多</span>
+			<img src="../images/down.gif" alt="" style="display: none; height:1.8rem">
+		</div>
+	</div>
+
+</body>
+<script src="../js/zepto.min.js"></script>
+<script>
+var getDate = [{
+	link:"1.html",name:"张家辉",num:"3600.00",state:"办理成功"
+},{
+	link:"1.html",name:"张家辉",num:"3600.00",state:"办理成功"
+},{
+	link:"1.html",name:"张家辉",num:"3600.00",state:"办理成功"
+}];
+$(function () {
+	var loading = false;
+	function loadData() {
+		//console.log($("body").scrollTop(),$("body").height());
+		$("#loadMore span").hide().next().show();
+		if (loading) {
+			return 0;
+		}
+		loading = true;
+		//$.getJSON("query.php", function(getDate) {
+			var i = 0, trs = "";
+			for(; i < getDate.length; i++) {
+				trs += '<tr><td><a href="'+getDate[i].link +'">' + getDate[i].name + '</a></td><td>'+getDate[i].num+'</td><td>'+getDate[i].num+'</td></tr>';
+			}
+			$(".o-tbl-detail tbody").append(trs);
+			loading = false;
+			$("#loadMore span").show().next().hide();
+		//})
+
+	}
+	$("body").on("swipeUp", loadData);
+	$("#loadMore").on("click", loadData);
+})
+</script>
+</html>

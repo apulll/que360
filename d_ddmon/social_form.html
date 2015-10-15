@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!-- http://www.que360.com/ -->
+<html lang="zh-CN">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>欢雀HR服务</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common/global.css" rel="stylesheet">
+	<link href="css/content/social.css" rel="stylesheet">
+	<!--bootstrap规范检查-->
+	<!--页面静态文件-->
+	<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link rel="icon" href="favicon.ico">
+</head>
+
+<body ryt13513="1">
+	<!--通用头部-->
+	<header id="headerMenu" class="">
+		<div class="head-wrap">
+			<div class="container">
+				<h1 class="logo pull-left"><a href="http://www.que360.com/" title="logo"><img src="images/logo.png"></a></h1>
+				<nav class="head-nav pull-left">
+					<ul class="list-inline">
+						<li>
+							<a href="http://www.que360.com/" class="active">首页</a>
+						</li>
+						<li>
+							<a href="http://www.que360.com/social/index">自助社保</a>
+						</li>
+						<li>
+							<a href="http://www.que360.com/product/insurance/5">商业保险</a>
+						</li>
+						<li>
+							<a href="http://www.que360.com/product/medical/8">体检套餐</a>
+						</li>
+						<!-- <li>
+                            <a href="#" >弹性福利</a>
+                        </li> -->
+						<li>
+							<i class="join-us">new</i>
+							<a href="http://www.que360.com/content/aboutus">加入我们</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="shopping-cart pull-right">
+					<a href="http://www.que360.com/order/shoppingcart"><i class="glyphicon glyphicon-shopping-cart"></i><span class="badge shoppingcart-num" id="shopCartNum">0</span></a>
+					<!--登录后-->
+					<!--登录前-->
+					<a id="cd-menu-trigger" class="head-login" href="http://www.que360.com/account/login">登录</a>
+					<a class="head-reg" href="http://www.que360.com/account/reg">注册</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--内容开始-->
+	<div class="cd-main-content">
+		<div class="social-banner">
+			<div class="container">
+				<div class="social-base">
+					<i class="s-bg">社保</i>
+					<ul>
+						<li>参保城市：广东-深圳</li>
+						<li>险种类型：深户一档医疗</li>
+						<li>社保基数：4000元</li>
+						<li>缴费金额：800.00元</li>
+						<li class="s-f-link"><a href="">缴费明细</a><a href="">返回修改</a></li>
+					</ul>
+				</div>
+				<div class="fund-base">
+					<i class="s-bg">公积金</i>
+					<ul>
+						<li>参保城市：广东-深圳</li>
+						<li>险种类型：公司5%  个人5%</li>
+						<li>社保基数：4000元</li>
+						<li>缴费金额：800.00元</li>
+						<li class="s-f-link"><a href="">缴费明细</a><a href="">返回修改</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row social-content">
+				<form action="">
+					<ul class="nav nav-tabs">
+						<li role="presentation"><a href="#"></a></li>
+						<li role="presentation" class="active"><a href="#" class="nav-list">缴交名单</a></li>
+						<li role="presentation"><a href="#" class="nav-import" role="button">从名单导入</a></li>
+					</ul>
+					<div class="s-table">
+						<table class="tbl-list table">
+							<tr class="active">
+								<td>姓名</td>
+								<td>证件类型</td>
+								<td>证件号码</td>
+								<td>社保号</td>
+								<td>公积金帐号</td>
+								<td>一寸照</td>
+								<td>身份证正面</td>
+								<td>身份证背面</td>
+								<td>操作</td>
+							</tr>
+							<tr>
+								<td>陈坤</td>
+								<td>身份证</td>
+								<td>429006199501221122</td>
+								<td>42010119</td>
+								<td>7604152349</td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><span class="s-edit span-modify"></span> <span class="s-edit span-delete"></span></td>
+							</tr>
+							<tr>
+								<td>陈坤</td>
+								<td>身份证</td>
+								<td>429006199501221122</td>
+								<td>42010119</td>
+								<td>7604152349</td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><span class="s-edit span-modify"></span> <span class="s-edit span-delete"></span></td>
+							</tr>
+							<tr>
+								<td>陈坤</td>
+								<td>身份证</td>
+								<td>429006199501221122</td>
+								<td>42010119</td>
+								<td>7604152349</td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><span class="s-edit span-modify"></span> <span class="s-edit span-delete"></span></td>
+							</tr>
+							<tr>
+								<td>陈坤</td>
+								<td>身份证</td>
+								<td>429006199501221122</td>
+								<td>42010119</td>
+								<td>7604152349</td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><a href="javascript:;" onclick="seeDetail(this)">查看</a> <a href="javascript:;" onclick="doModify(this)">更改</a></td>
+								<td><span class="s-edit span-modify"></span> <span class="s-edit span-delete"></span></td>
+							</tr>
+							<tr>
+								<td><input type="text" name="" id="" class="input-small"></td>
+								<td><input type="text" name="" id="" class="input-middle"></td>
+								<td><input type="text" name="" id="" class="input-big"></td>
+								<td><input type="text" name="" id="" class="input-small"> &nbsp;<label><input type="checkbox" name="" id="" class="v-top"> 首次</label></td>
+								<td><input type="text" name="" id="" class="input-small"> &nbsp;<label><input type="checkbox" name="" id="" class="v-top"> 首次</label></td>
+								<td><a href="">上传</a></td>
+								<td><a href="">上传</a></td>
+								<td><a href="">上传</a></td>
+								<td><span class="s-edit span-unselect"></span></td>
+							</tr>
+						</table>
+						<p class="text-right">共 <span class="orange">1</span> 人&nbsp;&nbsp;<span class="s-span-type">合计金额&nbsp;&nbsp;：</span><span class="s-span-num">￥20000.00</span></p>
+						<p class="text-right"><span class="s-span-type">合计服务费：</span><span class="s-span-num">￥1500.00</span></p>
+						<p class="text-right"><span class="s-span-type">共计支付&nbsp;&nbsp;：</span><span class="orange s-span-num">￥20000.00</span></p>
+						<p class="text-right"><button type="button" class="btn">提交订单</button></p>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="overlay" class="">
+			<div class="container hide" id="socialModify">
+				<form action="" class="fill-form">
+					<div class="s-f-search">
+						<div class="col-md-6">
+							<input type="text" name="searchName" id="searchName" placeholder="姓名/手机/邮箱">
+							<span class="btn-search"></span>
+							<label class="fr">&nbsp;&nbsp;所在部门: 
+								<select name="" id="">
+									<option value="">全部</option>
+								</select>
+							</label>
+						</div>
+					</div>
+					<table class="tbl-list table">
+						<tr class="active">
+							<td>姓名</td>
+							<td>证件类型</td>
+							<td>证件号码</td>
+							<td>社保号</td>
+							<td>社保基数</td>
+							<td>公积金帐号</td>
+							<td>公积金基数</td>
+						</tr>
+						<tr>
+							<td><label class="select-name"><input type="checkbox" name="" id=""> 李锦龙</label></td>
+							<td>身份证</td>
+							<td>420006198804301122</td>
+							<td>2365965</td>
+							<td>5000</td>
+							<td>123066543</td>
+							<td>6000</td>
+						</tr>
+						<tr>
+							<td><label class="select-name"><input type="checkbox" name="" id=""> 李锦龙</label></td>
+							<td>身份证</td>
+							<td>420006198804301122</td>
+							<td>2365965</td>
+							<td>5000</td>
+							<td>123066543</td>
+							<td>6000</td>
+						</tr>
+						<tr>
+							<td><label class="select-name"><input type="checkbox" name="" id=""> 李锦龙</label></td>
+							<td>身份证</td>
+							<td>420006198804301122</td>
+							<td>2365965</td>
+							<td>5000</td>
+							<td>123066543</td>
+							<td>6000</td>
+						</tr>
+						<tr>
+							<td><label class="select-name"><input type="checkbox" name="" id=""> 李锦龙</label></td>
+							<td>身份证</td>
+							<td>420006198804301122</td>
+							<td>2365965</td>
+							<td>5000</td>
+							<td>123066543</td>
+							<td>6000</td>
+						</tr>
+						<tr>
+							<td><label class="select-name"><input type="checkbox" name="" id=""> 李锦龙</label></td>
+							<td>身份证</td>
+							<td>420006198804301122</td>
+							<td>2365965</td>
+							<td>5000</td>
+							<td>123066543</td>
+							<td>6000</td>
+						</tr>
+					</table>
+					<p>
+						<button type="button" class="btn btn-s-all">全 选</button>
+						<button type="button" class="btn btn-s-import">导 入</button>
+						<button type="button" class="btn btn-s-close">关 闭</button>
+					</p>
+				</form>
+			</div>
+			<div class="container " id="socialDetail">
+				<div class="tbl-detail">
+					<table class="table table-bordered">
+						<tr class="t-detail-head">
+							<td rowspan="2">缴纳项目</td>
+							<td rowspan="2">社保基数</td>
+							<td colspan="2">个人缴纳</td>
+							<td colspan="2">企业缴纳</td>
+							<td rowspan="2">小计</td>
+						</tr>
+						<tr class="t-detail-head">
+							<td>缴纳比例</td>
+							<td>缴纳金额</td>
+							<td>缴纳比例</td>
+							<td>缴纳金额</td>
+						</tr>
+						<tr>
+							<td>养老保险</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td rowspan="7">社保小计:<br> 1230.00</td>
+						</tr>
+						<tr>
+							<td>失业保险</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>工伤保险</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>生育保险</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>医疗保险</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>重大疾病</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>残 险 金</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>公 积 金</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>公积金小计: <br>1210.30</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>个人缴纳</td>
+							<td></td>
+							<td></td>
+							<td>企业缴纳</td>
+							<td></td>
+						</tr>
+						<tr class="t-detail-head">
+							<td colspan="7">总缴纳：2568.08 <button type="button" class="btn btn-s-close">关 闭</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--底部开始-->
+	<footer class="hide">
+		<div class="ft-content">
+			<div class="row">
+				<div class="col-md-2">
+					<ul class="ft-about">
+						<li class="title"><i class="sprite icon-about"></i>关于我们</li>
+						<li><a href="http://www.que360.com/content/aboutus#">关于欢雀</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">加入我们</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">联系我们</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="ft-server">
+						<li class="title"><i class="sprite icon-server"></i>服务类型</li>
+						<li><a href="http://www.que360.com/content/aboutus#">自助社保</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">商业保险</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">体检套餐</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">弹性福利</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="ft-weibo">
+						<li class="title"><i class="sprite icon-weibo"></i>关注我们</li>
+						<li><a href="http://www.que360.com/content/aboutus#">官方微信</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">新浪微博</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">腾讯微博</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">QQ空间</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="ft-help">
+						<li class="title"><i class="sprite icon-help"></i>帮助中心</li>
+						<li><a href="http://www.que360.com/content/aboutus#">新手指引</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">账号设置</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">服务规则</a></li>
+						<li><a href="http://www.que360.com/content/aboutus#">费用相关</a></li>
+					</ul>
+				</div>
+				<div class="col-md-offset-2 col-md-2">
+					<div class="fa-weixin">
+						<p><i class="glyphicon glyphicon-earphone2"></i>服务热线</p>
+						<p class="tel">400-888-888</p>
+						<img src="images/weixin_code.png" alt="weixin">
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="footer-hr">
+		<div class="container">
+			<div class="copyright">
+				<!--版权信息-->
+				<div class="row">
+					<div class="col-md-1">
+						<img src="images/logo.png" alt="logo">
+					</div>
+					<div class="col-md-3">
+						<i class="glyphicon glyphicon-file"></i>service@que360.com
+					</div>
+					<div class="col-md-8">
+						<p>©2015 Mila Technology Co., Ltd. All rights reserved. 深圳前海欢雀科技版权所有 2004-2015 ICP证: 粤A1-20150001</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!--侧边栏-->
+	<nav id="cd-lateral-nav" class="hide">
+		<!--登录后-->
+		<!--未登录-->
+		<div class="text-center">
+			<i class="sprite icon-login-title">
+            </i>
+		</div>
+		<div class="cd-navigation socials">
+			<!-- 登陆框 -->
+			<div class="login-form" id="headerLoginForm">
+				<div class="page-header" id="popover-title">
+					<h5>会员登录</h5><span class="error-msg" id="loginErrorMsg"></span><a class="pull-right" href="http://www.que360.com/account/reg"><i class="glyphicon glyphicon-play-circle"></i>立即注册</a>
+				</div>
+				<form role="form" class="form-horizontal" id="loginForm" novalidate="novalidate">
+					<input type="hidden" name="_token" value="jyeQQsFo83KIFcitnQOf242cMOM8bl0qpNWvwhP0">
+					<div class="form-body">
+						<div id="changeEmail" class="form-group">
+							<div class="col-md-12">
+								<input type="email" placeholder="邮箱" class="form-control" name="email" id="userEmail" autocomplete="off">
+							</div>
+						</div>
+						<div class="form-group has-feedback pwd">
+							<div class="col-md-12">
+								<input type="password" placeholder="登陆密码" class="form-control hidden">
+								<input type="password" placeholder="登陆密码" class="form-control" name="password" id="headerPwd">
+							</div>
+							<button class="glyphicon glyphicon-circle-arrow-right form-control-feedback login-btn" id="loginBtn" type="submit"></button>
+						</div>
+						<div class="form-group has-feedback code hidden">
+							<div class="col-md-12">
+								<input type="text" placeholder="请输入验证码" class="form-control" name="code" id="loginCode">
+							</div>
+							<img alt="code" src="images/code.png" class="form-control-feedback codeimg">
+							<span class="glyphicon glyphicon-repeat form-control-feedback code-btn" id="codeBtn"></span>
+						</div>
+						<div class="form-group">
+							<div class="col-md-8">
+								<div class="checkbox-list">
+									<label class="checkbox-inline">
+										<div class="checker" id="uniform-optionsRadios4"><span class="checked"><input type="checkbox" name="marital_status" id="optionsRadios4" value="1" checked=""></span></div> 记住密码
+									</label>
+								</div>
+							</div>
+							<div class="col-sm-4" style="text-align:right;">
+								<div class="checkbox">
+									<!--<a id="useMobile" href="/account/reg">免费注册</a>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!--工具栏-->
+	<div class="left-tools hide" id="leftTools" style="position: fixed; bottom: 50%;">
+		<div class="main" id="leftToolsList">
+			<a tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<span class=&#39;tel-span&#39;>400-888-8888</span>" data-original-title="" title="">
+				<i class="sprite icon-tools-tel"></i>
+			</a>
+			<a tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<a class=&#39;tools-social-a&#39; href=&#39;/social/index&#39;>社保计算器</a>" data-original-title="" title="">
+				<i class="sprite icon-tools-count"></i>
+			</a>
+			<a tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<a href=&#39;mailto:#&#39;>service@mila66.com</a>" data-original-title="" title="">
+				<i class="sprite icon-tools-email"></i>
+			</a>
+			<a tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<img src=&#39;images/tools_weixin.png&#39; />" data-original-title="" title="">
+				<i class="sprite icon-tools-weixin"></i>
+			</a>
+		</div>
+		<div class="backtop" id="toolsBacktopBtn" style="display: none;">
+			<a role="button">
+				<i class="sprite icon-tools-backtop"></i>
+			</a>
+		</div>
+	</div>
+	<script src="js/jquery/jquery-1.10.2.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery/plugins/jquery.validate.js"></script>
+	<script src="js/jquery/plugins/validate_cn.js"></script>
+	<script src="js/jquery/plugins/jquery.uniform.min.js"></script>
+	<script src="js/common/menu.js"></script> -->
+</body>
+<script>
+function seeDetail (t) {
+	$("#overlay, #overlay .container").removeClass("hide");
+	$("#socialModify").addClass("hide");
+}
+function doModify (t) {
+	$("#overlay, #overlay .container").removeClass("hide");
+	$("#socialDetail").addClass("hide");
+}
+$(".nav-import").on("click", doModify);
+$(".btn-search").on("click", function() {
+	$.post("/search.php", {
+		searchName: $("#btn-search").val()
+	}, function() {
+		//
+	})
+})
+$(".btn-s-all").on("click", function() {
+	if ($(".fill-form input:checkbox").length == $(".fill-form input:checked").length) {
+		$(".fill-form input:checkbox").prop("checked", false);
+	} else {
+		$(".fill-form input:checkbox").prop("checked", true);
+	}
+})
+$(".btn-s-close").on("click", function() {
+	$("#overlay").addClass("hide");
+})
+</script>
+</html>

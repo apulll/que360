@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>欢雀HR服务</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/common/global.css" rel="stylesheet">
+	<link href="css/content/social.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- <link rel="icon" href="favicon.ico"> -->
+</head>
+
+<body class="grayBg">
+	<!--通用头部-->
+	<header id="headerMenu">
+		<div class="head-wrap">
+			<div class="container">
+				<h1 class="logo pull-left"><a href="https://www.que360.com" title="logo"><img src="images/logo.png"></a></h1>
+				<nav class="head-nav pull-left">
+					<ul class="list-inline">
+						<li>
+							<a href="https://www.que360.com">首页</a>
+						</li>
+						<li>
+							<a href="/social/index" class="active">自助社保</a>
+						</li>
+						<li>
+							<a href="https://www.que360.com/social/calculator">社保计算器</a>
+						</li>
+						<li>
+							<i class="join-us">new</i>
+							<a href="https://www.que360.com/content/aboutus">加入我们</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="shopping-cart pull-right">
+					<!--登录后-->
+					<a class="user-ico" href="/user/index"><img id="userIcoBtn" src="images/user_ico.png" alt="userIco"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--内容开始-->
+	<div class="cd-main-content">
+		<!--内容开始-->
+		<div class="fund-manage">
+			<div class="s-m-step">
+				<p>
+					企业服务》社保账单》<span>社保设置</span>
+				</p>
+			</div>
+			<p class="s-m-add">
+				<button class="btn" id="addNew">新 增</button>
+			</p>
+			<div class="s-m-list">
+				<table class="">
+					<tr>
+						<th class="b-left">保险福利套餐</th>
+						<th>参保城市</th>
+						<th>险种类型</th>
+						<th>社保基数</th>
+						<th>公积金基数</th>
+						<th>个人比例</th>
+						<th>企业比例</th>
+						<th>状态</th>
+						<th class="b-right">操作</th>
+					</tr>
+					<tr>
+						<td>深圳深户通用</td>
+						<td>广东-深圳</td>
+						<td>深户（基本医疗一档）</td>
+						<td>3000</td>
+						<td>3000</td>
+						<td>5%</td>
+						<td>5%</td>
+						<td>生效</td>
+						<td><a href="#" class="seeDetail">查看</a></td>
+					</tr>
+					<tr>
+						<td>深圳深户通用</td>
+						<td>广东-深圳</td>
+						<td>深户（基本医疗一档）</td>
+						<td>3000</td>
+						<td>3000</td>
+						<td>5%</td>
+						<td>5%</td>
+						<td>生效</td>
+						<td><a href="#" class="seeDetail">查看</a></td>
+					</tr>
+					<tr>
+						<td>深圳深户通用</td>
+						<td>广东-深圳</td>
+						<td>深户（基本医疗一档）</td>
+						<td>3000</td>
+						<td>3000</td>
+						<td>5%</td>
+						<td>5%</td>
+						<td>生效</td>
+						<td><a href="#" class="seeDetail">查看</a></td>
+					</tr>
+					<tr>
+						<td>深圳深户通用</td>
+						<td>广东-深圳</td>
+						<td>深户（基本医疗一档）</td>
+						<td>3000</td>
+						<td>3000</td>
+						<td>5%</td>
+						<td>5%</td>
+						<td>生效</td>
+						<td><a href="#" class="seeDetail">查看</a></td>
+					</tr>
+					<tr>
+						<td>深圳深户通用</td>
+						<td>广东-深圳</td>
+						<td>深户（基本医疗一档）</td>
+						<td>3000</td>
+						<td>3000</td>
+						<td>5%</td>
+						<td>5%</td>
+						<td>生效</td>
+						<td><a href="#" class="seeDetail">查看</a></td>
+					</tr>
+				</table>
+				<div class="pagebox">
+					<ul class="pageul">
+						<li class="prev"><span>上一页</span></li>
+						<li><span class="currentpage">1</span></li>
+						<li><a curpage="2" class="demo" href=""><span>2</span></a></li>
+						<li><a curpage="3" class="demo" href=""><span>3</span></a></li>
+						<li><span>...</span></li>
+						<li><a curpage="18" class="demo" href=""><span>18</span></a></li>
+						<li class="next"><span>下一页</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<form class="s-f-edit hide" method="" action="">
+			<input type="hidden" name="_token" value="DyWZpof99GEseunJtppG50mIB6CZCzyTgU2Eede6">
+			<div class="s-m-detail" style="display: block;">
+				<div class="sm-title">
+					<span>员工福利详情</span>
+					<a href="">社保计算器<i></i></a>
+				</div>
+				<p class="sm-combo">套餐名称: <span>深圳深户通用</span></p>
+				<p class="sm-city">所在城市: <span>广东 - 深圳</span></p>
+				<hr class="sm-hr">
+				<div id="forEdit">
+					<table id="sm-tbl-con" class="">
+						<tr>
+							<td class="">
+								<div class="switch-btn has-switch">
+									<div class="div-checkbox"></div>
+									<input type="hidden" name="socialType" value="1" id="socialChoice">
+								</div>&nbsp;&nbsp;<span class="sm-social">社 保</span></td>
+							<td colspan="2">
+								<span>深户（基本医疗一档）</span></span>
+								</span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+							</td>
+							<td>基数（3000）</td>
+							<td><a href="javascript:void(0)" id="showDetail">明细</a></td>
+						</tr>
+						<tr>
+							<td class="">
+								<div class="switch-btn has-switch">
+									<div class="div-checkbox"></div>
+									<input type="hidden" name="providentType" value="1" id="providenChoice">
+								</div>&nbsp;&nbsp;<span class="sm-fund">公积金</span></td>
+							<td>公司: 5%</td>
+							<td>个人: 5%</td>
+							<td>基数（3000）</td>
+							<td>&nbsp;</td>
+						</tr>
+					</table>
+					<table id="sm-tbl-edit" class="hide">
+						<tr>
+							<td width="100">
+								<div class="switch-btn has-switch">
+									<div class="div-checkbox"></div>
+									<input type="hidden" name="socialType" value="1" id="socialChoice">
+								</div>&nbsp;&nbsp;<span class="sm-social">社 保</span></td>
+							<td colspan="2" style="padding-right:8px;">
+								<select id="censusSel" name="census_id" class="form-control select2me select2-offscreen" autocomplete="off" disabled="">
+									<option value="-1">险 种 类 型</option>
+								</select>
+							</td>
+							<td>
+								<div class="input-group">
+									<input type="text" placeholder="基数范围" class="form-control" name="insurance_base" id="socialBase" maxlength="8" autocomplete="off" disabled="">
+									<span class="input-group-addon base_lowest" id="forSocialFlag">最低基数</span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="100">
+								<div class="switch-btn has-switch">
+									<div class="div-checkbox"></div>
+									<input type="hidden" name="providentType" value="1" id="providenChoice">
+								</div>&nbsp;&nbsp;<span class="sm-fund">公积金</span></td>
+							<td width="104" style="padding-right:8px;">
+								<div class="input-group">
+									<span class="input-group-addon">个人</span>
+									<select id="personSel" name="person_ratio" class="form-control" disabled="" autocomplete="off">
+										<option value="">比例</option>
+									</select>
+								</div>
+							</td>
+							<td width="104" style="padding-right:8px;">
+								<div class="input-group">
+									<span class="input-group-addon">企业</span>
+									<select id="companySel" name="company_ratio" class="form-control" disabled="" autocomplete="off">
+										<option value="">比例</option>
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="input-group">
+									<input type="text" placeholder="基数范围" class="form-control" name="reserve_base" id="reserveBase" autocomplete="off" maxlength="8" disabled="">
+									<span class="input-group-addon base_lowest" id="forReserveFlag">最低基数</span>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<p class="sm-total">费用合计: <span class="orange">1000元</span></p>
+					<hr class="sm-hr">
+				</div>
+				<table id="sm-tbl-list" class="sm-tbl-list hide">
+					<tbody>
+						<tr class="tr-bg1">
+							<td rowspan="2" style="border-top-left-radius:4px;">缴纳项目</td>
+							<td rowspan="2">基&nbsp;&nbsp;数</td>
+							<td colspan="2" style="border-bottom:1px solid #fff;">个人缴纳</td>
+							<td colspan="2" style="border-bottom:1px solid #fff;">企业缴纳</td>
+							<td rowspan="2" style="border-right:none;border-top-right-radius:4px; ">小计</td>
+						</tr>
+						<tr class="tr-bg1">
+							<td class="td-l-border">缴纳
+								<br>比例</td>
+							<td>金额
+								<br>(元)</td>
+							<td>缴纳
+								<br>比例</td>
+							<td class="td-r-border">金额
+								<br>(元)</td>
+						</tr>
+						<tr>
+							<td class="td-l-border td1">养老保险</td>
+							<td class="td2">8000.00</td>
+							<td class="td2">5.00%</td>
+							<td class="td2">400.00</td>
+							<td class="td2">5.00%</td>
+							<td class="td2">8000.00</td>
+							<td rowspan="7" class="tr-bg td3" style="border:1px solid #fff; border-right:none;">社保小计
+								<br> <span class="orange">1230.00</span>元</td>
+						</tr>
+						<tr class="tr-bg">
+							<td class="td-l-border">失业保险</td>
+							<td>8000.00</td>
+							<td>5.00%</td>
+							<td>700.00</td>
+							<td>5.00%</td>
+							<td>8000.00</td>
+						</tr>
+						<tr>
+							<td class="td-l-border">工伤保险</td>
+							<td>8000.00</td>
+							<td>5.00%</td>
+							<td>700.00</td>
+							<td>5.00%</td>
+							<td>8000.00</td>
+						</tr>
+						<tr class="tr-bg">
+							<td class="td-l-border">生育保险</td>
+							<td>8000.00</td>
+							<td>5.00%</td>
+							<td>800.00</td>
+							<td>5.00%</td>
+							<td>8000.00</td>
+						</tr>
+						<tr>
+							<td class="td-l-border">医疗保险</td>
+							<td>8000.00</td>
+							<td>5.00%</td>
+							<td>900.00</td>
+							<td>5.00%</td>
+							<td>8000.00</td>
+						</tr>
+						<tr class="tr-bg">
+							<td class="td-l-border">重大疾病</td>
+							<td>8000.00</td>
+							<td>5.00%</td>
+							<td>90.00</td>
+							<td>5.00%</td>
+							<td>8000.00</td>
+						</tr>
+						<tr>
+							<td class="td-l-border">残险金</td>
+							<td>8000.00</td>
+							<td>5.00%</td>
+							<td>80.00</td>
+							<td>5.00%</td>
+							<td>8000.00</td>
+						</tr>
+						<tr class="tr-bg" style="border-bottom:1px solid #fff;">
+							<td class="td-l-border">公积金</td>
+							<td>8000.00</td>
+							<td>5.00%</td>
+							<td>3500.00</td>
+							<td>5.00%</td>
+							<td>8000.00</td>
+							<td class="" style="border-left:1px solid #fff;">公积金小计
+								<br> <span class="orange">1210.30</span>元</td>
+						</tr>
+						<tr class="tr-bg">
+							<td style="border-bottom-left-radius:4px;" colspan="2">个人缴纳: <span class="orange">425</span>元</td>
+							<td colspan="3">企业缴纳: <span class="orange" style="border-bottom-right-radius:4px;">923</span>元</td>
+							<td colspan="2">共缴纳合计:<span class="orange bold">2460.00</span>元</td>
+							<!-- <td></td> -->
+						</tr>
+					</tbody>
+				</table>
+				<div class="s-m-operate">
+					<div id="dEdit">
+						<button type="button" class="sm-btn mr50" id="sEdit">编辑</button>
+						<button type="button" class="sm-btn" id="sClose">关闭</button>
+					</div>
+					<div id="dSave" class="hide">
+						<button type="button" class="sm-btn mr50" id="sSave">保存</button>
+						<button type="button" class="sm-btn" id="sCancel">取消</button>
+					</div>
+				</div>
+			</div>
+		</form>
+		<form class="form-horizontal s-f-add hide" action="https://www.que360.com/social/social-calculate" method="get" id="socialForm">
+			<div class="sm-title">
+				<span>新增福利套餐</span>
+				<a href="#" class="s-back"><i></i>收起</a>
+			</div>
+			<table id="sm-tbl-edit" class="">
+				<tr>
+					<td>套餐名称： </td>
+					<td colspan="3">
+						<select id="" name="" class="form-control select2me select2-offscreen" autocomplete="off" disabled="">
+							<option value="-1">深圳深户通用</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>所在城市：</td>
+					<td colspan="3">
+						<input type="text" class="form-control" placeholder="选择城市" id="city" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：</td>
+					<td colspan="3">
+						<button type="button" class="btn s-valid">生效</button>
+						<button type="button" class="btn s-invalid">失效</button>
+					</td>
+				</tr>
+				<tr>
+					<td width="100">
+						<div class="switch-btn has-switch">
+							<div class="div-checkbox"></div>
+							<input type="hidden" name="socialType" value="1" id="socialChoice">
+						</div>&nbsp;&nbsp;<span class="sm-social">社 保</span></td>
+					<td colspan="2" style="padding-right:8px;">
+						<select id="censusSel" name="census_id" class="form-control select2me select2-offscreen" autocomplete="off" disabled="">
+							<option value="-1">险 种 类 型</option>
+						</select>
+					</td>
+					<td>
+						<div class="input-group">
+							<input type="text" placeholder="基数范围" class="form-control" name="insurance_base" id="socialBase" maxlength="8" autocomplete="off" disabled="">
+							<span class="input-group-addon base_lowest" id="forSocialFlag">最低基数</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="100">
+						<div class="switch-btn has-switch">
+							<div class="div-checkbox"></div>
+							<input type="hidden" name="providentType" value="1" id="providenChoice">
+						</div>&nbsp;&nbsp;<span class="sm-fund">公积金</span></td>
+					<td width="104" style="padding-right:8px;">
+						<div class="input-group">
+							<span class="input-group-addon">个人</span>
+							<select id="personSel" name="person_ratio" class="form-control" disabled="" autocomplete="off">
+								<option value="">比例</option>
+							</select>
+						</div>
+					</td>
+					<td width="104" style="padding-right:8px;">
+						<div class="input-group">
+							<span class="input-group-addon">企业</span>
+							<select id="companySel" name="company_ratio" class="form-control" disabled="" autocomplete="off">
+								<option value="">比例</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<div class="input-group">
+							<input type="text" placeholder="基数范围" class="form-control" name="reserve_base" id="reserveBase" autocomplete="off" maxlength="8" disabled="">
+							<span class="input-group-addon base_lowest" id="forReserveFlag">最低基数</span>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<p class="sm-total">费用合计: <span class="orange">1000元</span></p>
+			<hr class="sm-hr">
+			<div class="sm-add">
+				<div class="form-group">
+					<label for="citySelect" class="col-md-2 control-label">城  　  市:</label>
+					<div class="col-md-10">
+						<input type="text" class="form-control" placeholder="选择城市" id="city" readonly="readonly">
+						<input type="hidden" name="city_id" value="" id="sendSelectId">
+						<div class="cityComp hide" style="display: block;">
+							<button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
+							<select id="proselect" class="area-sel">
+								<option value="">请选择</option>
+								<option value="241">北京</option>
+								<option value="242">天津</option>
+								<option value="243">河北</option>
+								<option value="244">山西</option>
+								<option value="245">内蒙古</option>
+								<option value="246">辽宁</option>
+								<option value="247">吉林</option>
+								<option value="248">黑龙江</option>
+								<option value="249">上海</option>
+								<option value="250">江苏</option>
+								<option value="251">浙江</option>
+								<option value="252">安徽</option>
+								<option value="253">福建</option>
+								<option value="254">江西</option>
+								<option value="255">山东</option>
+								<option value="256">河南</option>
+								<option value="261">海南</option>
+								<option value="262">重庆</option>
+							</select>
+							<input type="button" value="确定" id="sendSelect" class="btn btn-primary">
+							<!-- 热门城市 -->
+							<h4>热门城市</h4>
+							<ul class="list-inline green1 hot-city">
+								<li><a data-id="584" style="cursor: pointer;">武汉</a></li>
+								<li><a data-id="615" style="cursor: pointer;">广州</a></li>
+								<li><a data-id="617" style="cursor: pointer;">深圳</a></li>
+								<li><a data-id="618" style="cursor: pointer;">珠海</a></li>
+								<li><a data-id="636" style="cursor: pointer;">南宁</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">
+						<div class="switch-btn has-switch">
+							<div class="div-checkbox"></div>
+							<input type="hidden" name="socialType" value="1" id="socialChoice">
+						</div>社&nbsp;&nbsp;保:
+					</label>
+					<div class="col-sm-10 input-div">
+						<select id="censusSel" name="census_id" class="form-control select2me select2-offscreen" autocomplete="off" disabled="">
+							<option value="-1">请选择险种</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-md-2 control-label">
+						社保基数:
+					</label>
+					<div class="col-sm-10">
+						<div class="input-group" style="width:100%;">
+							<input type="text" placeholder="基数范围" class="form-control" name="insurance_base" id="socialBase" maxlength="8" autocomplete="off" disabled="">
+							<span class="input-group-addon base_lowest" id="forSocialFlag">最低基数</span>
+						</div>
+					</div>
+				</div>
+				<!-- 公积金 -->
+				<div class="form-group">
+					<label class="control-label col-md-2">
+						<div class="switch-btn has-switch">
+							<div class="div-checkbox"></div>
+							<input type="hidden" name="providentType" value="1" id="providenChoice">
+						</div>公积金:
+					</label>
+					<div class="col-md-10 input-div">
+						<div class="input-group" style="width:100%;">
+							<input type="text" placeholder="基数范围" class="form-control" name="reserve_base" id="reserveBase" autocomplete="off" maxlength="8" disabled="">
+							<span class="input-group-addon base_lowest" id="forReserveFlag">最低基数</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-2">缴纳比例:
+					</label>
+					<div class="col-sm-5">
+						<div class="input-group">
+							<span class="input-group-addon">公司</span>
+							<select id="companySel" name="company_ratio" class="form-control" disabled="" autocomplete="off">
+								<option value="">比例</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-5">
+						<div class="input-group">
+							<span class="input-group-addon">个人</span>
+							<select id="personSel" name="person_ratio" class="form-control" disabled="" autocomplete="off">
+								<option value="">比例</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="form-group" style="margin-top:30px;">
+					<div class="col-sm-offset-2 col-sm-10 sm-sub">
+						<button type="submit" class="btn btn-cal" id="submitBtn">计    算</button>
+						<button type="reset" class="btn btn-default" id="resetBtn">重    置</button>
+					</div>
+				</div>
+			</div>
+			<table id="" class="sm-tbl-list hide">
+				<tbody>
+					<tr class="tr-bg1">
+						<td rowspan="2" style="border-top-left-radius:4px;">缴纳项目</td>
+						<td rowspan="2">基&nbsp;&nbsp;数</td>
+						<td colspan="2" style="border-bottom:1px solid #fff;">个人缴纳</td>
+						<td colspan="2" style="border-bottom:1px solid #fff;">企业缴纳</td>
+						<td rowspan="2" style="border-right:none;border-top-right-radius:4px; ">小计</td>
+					</tr>
+					<tr class="tr-bg1">
+						<td class="td-l-border">缴纳
+							<br>比例</td>
+						<td>金额
+							<br>(元)</td>
+						<td>缴纳
+							<br>比例</td>
+						<td class="td-r-border">金额
+							<br>(元)</td>
+					</tr>
+					<tr>
+						<td class="td-l-border td1">养老保险</td>
+						<td class="td2">8000.00</td>
+						<td class="td2">5.00%</td>
+						<td class="td2">400.00</td>
+						<td class="td2">5.00%</td>
+						<td class="td2">8000.00</td>
+						<td rowspan="7" class="tr-bg td3" style="border:1px solid #fff; border-right:none;">社保小计
+							<br> <span class="orange">1230.00</span>元</td>
+					</tr>
+					<tr class="tr-bg">
+						<td class="td-l-border">失业保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>700.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr>
+						<td class="td-l-border">工伤保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>700.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr class="tr-bg">
+						<td class="td-l-border">生育保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>800.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr>
+						<td class="td-l-border">医疗保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>900.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr class="tr-bg">
+						<td class="td-l-border">重大疾病</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>90.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr>
+						<td class="td-l-border">残险金</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>80.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr class="tr-bg" style="border-bottom:1px solid #fff;">
+						<td class="td-l-border">公积金</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>3500.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+						<td class="" style="border-left:1px solid #fff;">公积金小计
+							<br> <span class="orange">1210.30</span>元</td>
+					</tr>
+					<tr class="tr-bg">
+						<td style="border-bottom-left-radius:4px;" colspan="2">个人缴纳: <span class="orange">425</span>元</td>
+						<td colspan="3">企业缴纳: <span class="orange" style="border-bottom-right-radius:4px;">923</span>元</td>
+						<td colspan="2">共缴纳合计:<span class="orange bold">2460.00</span>元</td>
+						<!-- <td></td> -->
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<!--底部开始-->
+		<footer class="">
+			<div class="ft-content">
+				<div class="row">
+					<div class="col-md-2">
+						<ul class="ft-about">
+							<li class="title"><i class="sprite icon-about"></i>关于我们</li>
+							<li><a href="#">关于欢雀</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">联系我们</a></li>
+							<li><a href="#">法律声明</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul class="ft-server">
+							<li class="title"><i class="sprite icon-server"></i>服务类型</li>
+							<li><a href="#">自助社保</a></li>
+							<li><a href="#">商业保险</a></li>
+							<li><a href="#">体检套餐</a></li>
+							<li><a href="#">弹性福利</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul class="ft-weibo">
+							<li class="title"><i class="sprite icon-weibo"></i>关注我们</li>
+							<li><a href="#">官方微信</a></li>
+							<li><a href="#">新浪微博</a></li>
+							<li><a href="#">腾讯微博</a></li>
+							<li><a href="#">QQ空间</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul class="ft-help">
+							<li class="title"><i class="sprite icon-help"></i>帮助中心</li>
+							<li><a href="#">新手指引</a></li>
+							<li><a href="#">账号设置</a></li>
+							<li><a href="#">服务规则</a></li>
+							<li><a href="#">费用相关</a></li>
+						</ul>
+					</div>
+					<div class="col-md-offset-2 col-md-2">
+						<div class="fa-weixin">
+							<p><i class="glyphicon glyphicon-earphone2"></i>服务热线</p>
+							<p class="tel">400-628-0101</p>
+							<img src="images/weixin_code.png" alt="weixin">
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="footer-hr">
+			<div class="container">
+				<div class="copyright">
+					<!--版权信息-->
+					<div class="row">
+						<div class="col-md-1">
+							<img src="images/logo.png" alt="logo">
+						</div>
+						<div class="col-md-3">
+							<i class="glyphicon glyphicon-file"></i>service@que360.com
+						</div>
+						<div class="col-md-8">
+							<p>©2015 HappyBird Technology Co., Ltd. All rights reserved. 深圳前海欢雀科技版权所有&nbsp;<a href="http://www.miitbeian.gov.cn/" target="_blank">ICP证: 粤ICP备15072594号-1</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!--侧边栏-->
+	<nav id="cd-lateral-nav" class="hide">
+		<!--登录后-->
+		<div class="text-center left-menu-ico">
+			<img alt="userIco" src="images/user_ico.png" id="userIcoBtn">
+		</div>
+		<ul class="left-menu-list">
+			<li class="active">
+				517577289@qq.com
+			</li>
+			<li>
+				<a href="/user/index"><i class="sprite icon-menu-usercenter"></i>会员中心</a>
+			</li>
+			<li>
+				<a href="https://www.que360.com/user/trade/tradelist"><i class="sprite icon-menu-order"></i>我的订单</a>
+			</li>
+			<li>
+				<a href="https://www.que360.com/user/safe/safesetup"><i class="sprite icon-menu-setting"></i>账号设置</a>
+			</li>
+			<li>
+				<a href="https://www.que360.com/account/logout"><i class="sprite icon-menu-exit"></i>退　　出</a>
+			</li>
+		</ul>
+	</nav>
+	<!--工具栏-->
+	<div class="left-tools" id="leftTools" style="position: fixed; bottom: 50%;">
+		<div class="main" id="leftToolsList">
+			<a tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<span class='tel-span'>400-628-0101</span>" data-original-title="" title="">
+				<i class="sprite icon-tools-tel"></i>
+			</a>
+			<a id="calculator" href="/social/calculator" tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<a class='tools-social-a' href='/social/calculator'>社保计算器</a>" data-original-title="" title="">
+				<i class="sprite icon-tools-count"></i>
+			</a>
+			<a href="mailto:#" tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<a href='mailto:#'>service@que360.com</a>" data-original-title="" title="">
+				<i class="sprite icon-tools-email"></i>
+			</a>
+			<a tabindex="0" role="button" data-placement="left" data-toggle="popover" data-content="<img src='/images/tools_weixin.png' />" data-original-title="" title="">
+				<i class="sprite icon-tools-weixin"></i>
+			</a>
+		</div>
+		<div class="backtop" id="toolsBacktopBtn" style="display: block;">
+			<a role="button">
+				<i class="sprite icon-tools-backtop"></i>
+			</a>
+		</div>
+	</div>
+	<div class="top-tip hidex" id="top-tip" style="display: none;">
+		加载中...
+	</div>
+	<script src="js/jquery/jquery-1.10.2.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery/plugins/jquery.validate.js"></script>
+	<script src="js/jquery/plugins/validate_cn.js"></script>
+	<script src="js/common/menu.js"></script>
+	<!-- <script src="/js/month_picker.js"></script>
+	<script src="js/social/social.js"></script>-->
+	<script>
+	var login_flag = false;
+	$("#addNew").on("click", function() {
+		$(".s-f-add").toggleClass("hide");
+	})
+	$(".seeDetail").on("click", function() {
+		$(".s-f-edit").removeClass("hide");
+	})
+	$(".switch-btn").on("click", function() {
+		$(this).toggleClass("has-switch");
+	})
+	$("#showDetail").on("click", function() {
+		$("#sm-tbl-list").removeClass("hide");
+		$("#forEdit").addClass("hide");
+	})
+	$("#sEdit").on("click", function() {
+		$("#sm-tbl-list, #sm-tbl-con").addClass("hide");
+		$("#forEdit, #sm-tbl-edit").removeClass("hide");
+		$(this).parent().addClass("hide").siblings().removeClass("hide");
+	})
+	$("#sClose").on("click", function() {
+		$(".s-m-detail").addClass("hide");
+	})
+	$("#sSave").on("click", function() {
+		$(".s-m-detail").addClass("hide");
+		$(".s-f-edit").submit();
+		//$(this).parent().addClass("hide").siblings().removeClass("hide");
+	})
+	$("#sCancel").on("click", function() {
+		$(".s-m-detail").addClass("hide");
+		$(this).parent().addClass("hide").siblings().removeClass("hide");
+	})
+	$(".base_lowest").on("click", function() {
+		$(this).toggleClass("base_lowest_select");
+	})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,389 @@
+/*社保管理*/
+
+.mr50 {
+	margin-right: 50px;
+}
+.s-m-step {
+	border-bottom: 1px solid #eee;
+	height: 50px;
+	line-height: 50px;
+}
+.s-m-step p {
+	margin: 0 auto;
+	width: 1200px;
+	font-size: 12px;
+	color: #999;
+}
+.s-m-step p span {
+	color: #38b863;
+}
+.s-m-add {
+	margin: 16px auto;
+	width: 1200px;
+}
+.s-m-add button {
+	width: 90px;
+	height: 32px;
+	background-color: #38b863;
+	color: #fff;
+}
+.s-m-list {
+	margin: 0 auto;
+	width: 1200px;
+}
+.s-m-list table {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+}
+.s-m-list table th {
+	/* border: none; */
+	height: 38px;
+	color: #666;
+	background-color: #f4f4f4;
+	font-weight: bold;
+	text-align: center;
+}
+.s-m-list table tr {
+	border: 1px solid #eee;
+}
+.s-m-list table td {
+	height: 46px;
+}
+.s-m-list table .b-left {
+	border-left: 1px solid #eee;
+}
+.s-m-list table .b-right {
+	border-left: 1px solid #eee;
+}
+
+/* 分页 */
+
+.pagebox {
+	text-align: center;
+	height: 35px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+.pagebox .pageul {
+	float: right;
+	height: 35px;
+	margin: 0 auto;
+	display: inline-block;
+}
+.pagebox .pageul li {
+	white-space: nowrap;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin-right: 6px;
+	list-style-type: none;
+	_width: 33px;
+	/* min-width:33px; */
+	vertical-align: middle;
+}
+.pagebox .pageul li span {
+	/* font-size: 12px; */
+	display: block;
+	width: 20px;
+	height: 20px;
+	/* line-height: 18px; */
+	color: #999;
+}
+.pagebox .pageul li a {
+	display: block;
+	_width: 33px;
+	/* min-width:33px; */
+	border: 1px solid #ddd;
+}
+.pagebox .pageul li a span, .pageul li a:visited span {
+	text-decoration: none;
+	border-color: #AEB9B9;
+	cursor: pointer;
+}
+.pagebox .pageul li a:hover span {
+	background-color: #38b863;
+	border: 1px solid #38b863;
+	color: #fff;
+}
+.pagebox .pageul li span.currentpage {
+	color: #fff !important;
+	background-color: #38b863;
+	border: 1px solid #38b863;
+}
+.pagebox .pageul li a:hover {
+	text-decoration: none;
+}
+.pagebox .pageul .pagego {
+	height: 30px;
+	width: auto;
+	margin-top: 3px
+}
+.pagebox .pageul b {
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	vertical-align: middle;
+}
+.pagebox .pageul a.go, .pagebox .pageul a.go:hover {
+	color: #fff;
+	display: inline-block;
+	border: 0;
+	height: 30px;
+	line-height: 30px;
+	width: 50px;
+	margin-left: 5px;
+	vertical-align: middle;
+	text-align: center;
+	overflow: hidden;
+	background: #f66;
+}
+.pagebox .pageul a.go:hover {
+	background: #f33;
+}
+.pagebox .pageul .pageinput {
+	height: 28px;
+	line-height: 28px;
+	width: 30px;
+	border: 1px solid #f0f0f0;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 3px
+}
+.pagebox .pageul .prev, .pagebox .pageul .next {
+	width: 54px;
+	overflow: hidden;
+}
+.pagebox .pageul .next {
+	margin-right: 0;
+}
+.pagebox .pageul .prev span {
+	border: 1px solid #ddd;
+	cursor: pointer;
+	width: 54px;
+}
+.pagebox .pageul .next span {
+	border: 1px solid #e3e3e3;
+	width: 54px;
+	cursor: pointer;
+}
+.pagebox .pageul .prev a, .pagebox .pageul .next a {
+	border: 1px solid #e3e3e3
+}
+
+/* 社保表格 */
+
+.s-m-detail {
+	display: none;
+	margin: 80px auto 4px;
+	border: 1px solid #eee;
+	width: 522px;
+	height: 722px;
+	border-radius: 5px;
+	/* box-shadow: 1px 1px 1px 3px rgba(102,102,102,.6); */
+}
+.sm-title {
+	height: 46px;
+	line-height: 46px;
+	/* text-align: center; */
+	background-color: #eee;
+}
+.sm-title span {
+	position: absolute;
+	/* display: inline-block; */
+	margin-left: 215px;
+}
+.sm-title a {
+	float: right;
+	padding-right: 15px;
+}
+.sm-title a i, .sm-title .s-back i{
+	display: inline-block;
+	margin-left: 5px;
+	width: 15px;
+	height: 15px;
+	background: url(../../images/sprite.png) 0 -80px no-repeat;
+}
+.sm-title .s-back {
+	float: left;
+	padding-left: 15px;
+}
+.sm-title .s-back i {
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 5px;
+	width: 15px;
+	height: 15px;
+	background: url(../../images/sprite.png) -18px -80px no-repeat;
+}
+.s-m-detail .sm-combo {
+	margin-top: 32px;
+	padding-left: 40px;
+	color: #999;
+}
+.s-m-detail .sm-combo span, .s-m-detail .sm-city span {
+	color: #666;
+}
+.s-m-detail .sm-city {
+	margin-top: 40px;
+	margin-bottom: 0;
+	padding-bottom: 32px;
+	padding-left: 40px;
+	color: #999;
+}
+.sm-hr {
+	margin: 0 auto;
+	border-bottom: 1px dashed #eee;
+	width: 484px;
+}
+.switch-btn {
+	float: left;
+	width: 14px;
+	height: 14px;
+	margin-top: 3px;
+	/* padding-left: 24px; */
+	z-index: 10;
+}
+.switch-btn .div-checkbox {
+	display: block;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	background: url(../../images/buy-page-sprite.png) -22px -224px no-repeat;
+}
+.has-switch .div-checkbox {
+	background: url(../../images/buy-page-sprite.png) -46px -224px no-repeat;
+}
+#sm-tbl-con, #sm-tbl-edit {
+	margin: 15px auto;
+	width: 484px;
+}
+#sm-tbl-con td, #sm-tbl-edit td {
+	padding: 15px 2px;
+	height: 24px;
+}
+.sm-total {
+	margin: 123px auto;
+	width: 484px;
+	color: #999;
+}
+.sm-total span {
+	font-weight: bold;
+}
+.sm-tbl-list {
+	margin: 0 auto;
+	width: 484px;
+}
+.sm-tbl-list td {
+	height: 32px;
+	text-align: center;
+	font-size: 12px;
+}
+.sm-tbl-list .td1 {
+	width: 94px;
+}
+.sm-tbl-list .td2 {
+	width: 60px;
+}
+.sm-tbl-list .td-l-border {
+	border-left: 1px solid #dbe8f6;
+}
+.sm-tbl-list .td-r-border {
+	border-right: 1px solid #dbe8f6;
+}
+.sm-tbl-list .tr-bg {
+	background-color: #e2f0f9;
+}
+.sm-tbl-list .tr-bg1 {
+	background-color: #dbe8f6;
+}
+.sm-tbl-list .tr-bg1 td {
+	border-right: 1px solid #fff;
+	background-color: #dbe8f6;
+	font-weight: bold;
+}
+.input-group-addon {
+	padding: 1px;
+	height: 24px;
+	font-size: 12px;
+}
+.form-control {
+	padding: 1px;
+	height: 24px;
+	font-size: 12px;
+}
+.base_lowest {
+	width: 78px;
+	padding-left: 5px;
+	background: url(../../images/base_lowest.png) right bottom no-repeat;
+	background-size: 23px 23px;
+	cursor: pointer;
+	color: #ccc;
+	text-align: left;
+}
+.base_lowest_select {
+	background: url(../../images/base_lowest_select.png) right bottom no-repeat;
+	color: #38b863;
+}
+.s-m-operate {
+	margin-top: 55px;
+	text-align: center;
+}
+.s-m-operate .sm-btn {
+	width: 160px;
+	height: 32px;
+	border: 2px solid #38b863;
+	color: #38b863;
+	background-color: #fff;
+}
+.sm-social {
+	display: inline-block;
+	width: 60px;
+	height: 24px;
+	color: #1d9d7c;
+	background-color: #b3f0e1;
+	border-radius: 4px;
+	text-align: center;
+}
+.sm-fund {
+	display: inline-block;
+	width: 60px;
+	height: 24px;
+	color: #bb8817;
+	background-color: #fae7bd;
+	border-radius: 4px;
+	text-align: center;
+}
+.s-f-add {
+	margin: 0 auto;
+	width: 522px;
+}
+.s-f-add .sm-add {
+	padding: 20px 30px;
+}
+.s-f-add .sm-sub{
+	text-align: right;
+}
+.s-f-add .sm-sub button{
+	width: 170px;
+	height: 32px;
+	background-color: #eee;
+}
+.s-f-add .sm-sub .btn-cal{
+	float: left;
+	color: #fff;
+	background-color: #38b863;
+}
+.s-f-add .s-valid {
+	color: #38b863;
+	background-color: #ddfae6;
+}
+.s-f-add .s-invalid {
+	background-color: #fff;
+}
+
+.s-f-add .s-invalid:hover {
+	color: #666;
+	background-color: #eee;
+}

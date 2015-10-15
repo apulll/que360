@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common/global_add.css" rel="stylesheet">
+    <link href="../css/content/m_social_order.css" rel="stylesheet">
+    <link href="../css/content/m_social_area.css" rel="stylesheet">
+    <title>欢雀确认</title>
+    <style>
+        .noborder_input {
+            display:inline;border:0;background: #fff;
+            width: 74%;
+            padding-left: 31px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="l_head">
+        <i></i>
+        <p>填写订单</p>
+        <a></a>
+    </header>
+    <div class="main order_social">
+        <a class="social_area" id="social_area">参保地<input type="text" name="" placeholder="请选择参保地" class="noborder_input data-input" style=""  disabled><!-- <span>请选择参保地</span> -->
+        <input type="hidden" id="city_id">
+            <i></i></a>
+        <div class="social_index">
+            <a>参保方案<i></i></a>
+            <a>社保险种<span>深户(基本医疗一档)</span></a>
+            <a>社保基数<span>3000</span></a>
+            <a>社保公积金<span>3000</span></a>
+        </div>
+        <a class="social_person" id="social_person">参保人<span>小骨&nbsp;&nbsp;何炅</span><i></i></a>
+        <a class="social_day">参保月份<span>2015年10月-2015年12月</span><i></i></a>
+        <p class="go">
+            <input type="button" value="提交订单" />
+        </p>
+    </div>
+    <!-- 城市side -->
+    <div class="sidebar-content sidebar-region-content">
+        <div class="sidebar-header side-title">
+            <span id="region-back-arrow" class="side-title-back"><i class=""></i></span><span class="side-title-name">选择参保地</span>
+        </div>
+        <div class="sidebar-items-container region-list-group">
+            <div class="spacer44"></div>
+            <div class="region-wrapper">
+                <ul id="cityList" level="1" class="sidebar-list sidebar-categories region-list cur">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 参保人side -->
+    <div class="side-content sideinsure-content">
+        <!-- 选择参保人 -->
+        <div class="select_em">
+            <div class="sidebar-header side-title">
+                <span id="person-back-arrow" class="title-back">
+                    <i class=""></i>
+                </span>
+                <span class="title-name">选择参保人</span>
+                <span class="new_person"></span>
+            </div>
+            <div class="sidebar-items-container">
+                <div class="spacer44"></div>
+                <div class="side-wrapper">
+                    <ul>
+                    <li class="person_detail">
+                        <div class="">
+                            <i class="radio_ok"></i>
+                            <p class="insu_name">赵佳佳</p>
+                            <p class="insu_tel">手机号：<span>13923704568</span></p>
+                            <p class="insu_iden">身份证：<span>45213119675236</span></p>
+                            <a class="insu_edit"></a>
+                            <a class="insu_delete"></a>
+                        </div>
+                    </li>
+                    <li class="person_detail checked">
+                        <div class="">
+                            <i class="radio_ok"></i>
+                            <p class="insu_name">赵佳佳</p>
+                            <p class="insu_tel">手机号：<span>13923704568</span></p>
+                            <p class="insu_iden">身份证：<span>45213119675236</span></p>
+                            <a class="insu_edit"></a>
+                            <a class="insu_delete"></a>
+                        </div>
+                    </li>
+                    <li class="person_detail">
+                        <div class="">
+                            <i class="radio_ok"></i>
+                            <p class="insu_name">赵佳佳</p>
+                            <p class="insu_tel">手机号：<span>13923704568</span></p>
+                            <p class="insu_iden">身份证：<span>45213119675236</span></p>
+                            <a class="insu_edit"></a>
+                            <a class="insu_delete"></a>
+                        </div>
+                    </li>
+                    <li class="person_detail checked">
+                        <div class="">
+                            <i class="radio_ok"></i>
+                            <p class="insu_name">赵佳佳</p>
+                            <p class="insu_tel">手机号：<span>13923704568</span></p>
+                            <p class="insu_iden">身份证：<span>45213119675236</span></p>
+                            <a class="insu_edit"></a>
+                            <a class="insu_delete"></a>
+                        </div>
+                    </li>
+                    <li class="person_detail checked">
+                        <div class="">
+                            <i class="radio_ok"></i>
+                            <p class="insu_name">赵佳佳</p>
+                            <p class="insu_tel">手机号：<span>13923704568</span></p>
+                            <p class="insu_iden">身份证：<span>45213119675236</span></p>
+                            <a class="insu_edit"></a>
+                            <a class="insu_delete"></a>
+                        </div>
+                    </li>
+                    <li class="person_detail checked">
+                        <div class="">
+                            <i class="radio_ok"></i>
+                            <p class="insu_name">赵佳佳</p>
+                            <p class="insu_tel">手机号：<span>13923704568</span></p>
+                            <p class="insu_iden">身份证：<span>45213119675236</span></p>
+                            <a class="insu_edit"></a>
+                            <a class="insu_delete"></a>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 新建参保人 -->
+        <div class="new_slide_content hide">
+            <div class="sidebar-header side-title">
+                <span id="person-new-back-arrow" class="title-back">
+                    <i class=""></i>
+                </span>
+                <span class="title-name">选择参保人</span>
+
+            </div>
+            <div class="sidebar-items-container">
+                <div class="spacer44"></div>
+                <div class="side-wrapper">
+                    
+                </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/city_select2.js"></script>
+<script>
+    var cityUrl = "http://192.168.1.48/myproject/hqweb/2_demo/mobile/d_ddmon/json/city.json";
+    $('body').RegionList();
+    $('body').personList();
+</script>
+<script>
+// $(function() {
+//     var cityBtn = $('.social_area');
+//     var returnBtn = $('#region-back-arrow');
+//     var obj = $('#cityList');
+//     var dataCity;
+//     // $('.social_area').on('click', function(event) {
+//     //     event.preventDefault();
+//     //     $('.sidebar-content').addClass('on');
+//     // });
+//     // $('#region-back-arrow').on('click', function(event) {
+//     //     event.preventDefault();
+//     //     $('.sidebar-content').removeClass('on');
+//     // });
+//     init();
+
+//     function setBtnTrigger() {
+//         cityBtn.on('click', function(event) {
+//             event.preventDefault();
+//             getRegionInfo();
+//         });
+//     }
+
+//     function getRegionInfo() {
+//         $.ajax({
+//             url: '../json/city.json',
+//             type: 'get',
+//             dataType: 'json',
+//             success: function(data) {
+//                 if (data.status) {
+//                     setTimeout(function() {
+//                         // hideLoading();
+//                         if (data.data && data.data.length > 0) {
+//                             dataCity = data;
+//                             initCity(data.data);
+//                             drawRegionList(data.data)
+//                         } else {
+//                             // if (Number(l) == 3) {
+//                             //     g.cleanUL(Number(l) + 1)
+//                             // }
+//                             // g.getResult(m)
+//                         }
+//                         // d = false
+//                     }, 300)
+//                 }
+//             }
+//         })
+
+
+//     }
+
+//     function cityChange() {
+//         obj.find('li').on('click', function(event) {
+//             event.preventDefault();
+//             var cid = $(this)
+
+
+
+
+//         });
+//     }
+//     function drawRegionList(data) {
+        
+        
+//     }
+
+//     function initCity(data) {
+//         var str = '';
+//         obj.html('');
+//         console.log(data.length)
+//         for (var i = 0; i < data.length; i++) {
+//             if (data[i].parent_id == 45) {
+//                 str += '<li  data-id="' + data[i].id + '"><i class="tick"></i><span> ' + data[i].name + '</span></li>'
+//             }
+//         };
+//         obj.append(str);
+//         $('.sidebar-content').addClass('on');
+
+//     }
+
+//     function init() {
+//         setBtnTrigger();
+//     }
+//     function getCity() {
+
+//     }
+// });
+</script>
+
+</html>

@@ -1,0 +1,283 @@
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px
+    }
+}
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px
+    }
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+    color: #666;
+}
+.orange{
+    color: #ff8400;
+}
+.l_head p{
+    height: 1.7rem;
+    padding-top: 1.3rem;
+    text-align: center;
+    font: 1rem "microsoft yahei";
+    font: 1.3rem "microsoft yahei";
+}
+.p-content {
+    padding: 0 1.4rem;
+    height: 47,5rem;
+}
+.p-content .p-title {
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+.p-content .p-title label {
+    float: right;
+    margin-bottom: 0;
+    width: 4.2rem;
+    height: 2.6rem;
+    background-image: url(../../images/m-cal-close.png);
+    background-size: cover;
+}
+.p-content .p-title .open {
+    background-image: url(../../images/m-cal-open.png);
+}
+.p-content .c-range {
+    /* margin: 1rem 0 .5rem; */
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    width: 100%;
+    height: 3.3rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.p-content .social-percent .input-group {
+    width: 47%;
+}
+.p-content .fund-range {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+}
+#fund-range{
+    margin-bottom: 10.5rem;
+}
+.p-content .fund-range input {
+    /* width: 20.8rem; */
+    height: 3.3rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: none;
+}
+.p-content .socialBase {
+    width: 8.6rem;
+    letter-spacing: .1em;
+    background-color: #fff;
+    cursor: pointer;
+}
+.p-content .select {
+    background: #fff url(../../images/m-social-base.png) right bottom no-repeat;
+    color: #38b863;
+    background-size: 2.1rem;
+}
+.p-content select {
+    padding-left: 10px;
+    width: 100%;
+    height: 3.3rem;
+    border-color: #ccc;
+    color: #c3c3c3;
+    font-size: 1rem;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.p-content .input-group-addon {
+    font-size: 1rem;
+}
+.p-content .c-button button {
+    width: 45%;
+    height: 3rem;
+    font-size: 1.1rem;
+    background-color: #eee;
+}
+.p-content .c-button .btn-cal {
+    float: right;
+    background-color: #38b863;
+    color: #fff;
+}
+.p-content .dropdown-toggle {
+    width: 100%;
+    height: 3.3rem;
+    text-align: left;
+    background-color: #fff;
+}
+.p-content .dropdown-toggle .caret {
+    float: right;
+
+    border-width: 0.8rem;
+    border-top-color: #666;
+    margin-top: .5rem;
+}
+.p-content .dropdown-menu {
+    width: 100%;
+}
+.p-content .dropdown-menu li {
+    padding: 4px 8px;
+    width: 100%;
+}
+.c-p-list {
+    margin-top: 1.4rem;
+    /* text-align: center; */
+    font-size: 1.4rem;
+    color: #333;
+}
+.how-use {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+.how-use a {
+    font-size: 1rem;
+    color: #494949;
+}
+
+
+#forSocial {
+    position: relative;
+}
+#forSocial i{
+    position: absolute;
+    right: 0;
+    top: 1.3rem;
+    display: inline-block;
+    width: 1.45rem;
+    height: 0.75rem;
+    background-image: url(../../images/icondown.png);
+    background-size: cover;
+}
+#left{
+    position: relative;
+    z-index: 1;
+}
+#left i{
+    position: absolute;
+    right: 0;
+    top: 1.3rem;
+    display: inline-block;
+    width: 1.45rem;
+    height: 0.75rem;
+    background-image: url(../../images/icondown.png);
+    background-size: cover;
+    z-index: 2;
+}
+#right{
+    position: relative;
+    z-index: 1;
+}
+#right i{
+    position: absolute;
+    right: 0;
+    top: 1.3rem;
+    display: inline-block;
+    width: 1.45rem;
+    height: 0.75rem;
+    background-image: url(../../images/icondown.png);
+    background-size: cover;
+    z-index: 2;
+}
+
+/*个人缴费*/
+
+.o-head .s-head {
+    padding-left: 7rem;
+}
+.o-head .s-head span {
+    font-size: 1rem;
+    color: #ff8a00;
+}
+.p-hand {
+    margin: 1.7rem auto;
+    list-style: none;
+    padding-left: 0;
+}
+.p-hand li {
+    display: inline-block;
+    /* height: 2.5rem; */
+    line-height: 2.5rem;
+    color: #999;
+    font-size: 1rem;
+}
+.p-hand li:first-child {
+    min-width: 48%;
+}
+.p-hand li p {
+    margin-bottom: 0;
+}
+.p-hand li span {
+    display: inline-block;
+    color: #333;
+}
+.p-content table {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+.p-content table td {
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+}
+.p-content table .td1 {
+    width: 5.7rem;
+}
+.p-content table .td2 {
+    width: 3.5rem;
+}
+.p-content table .td-l-border {
+    border-left: 1px solid #dbe8f6;
+}
+.p-content table .td-r-border {
+    border-right: 1px solid #dbe8f6;
+}
+.p-content table .tr-bg {
+    background-color: #e2f0f9;
+}
+.p-content table .tr-bg1 {
+    background-color: #dbe8f6;
+}
+.p-content table .tr-bg1 td {
+    border-right: 2px solid #fff;
+    background-color: #dbe8f6;
+}
+.p-bg {
+    height: 2.2rem;
+    background: url(../../images/m-detail-bg.jpg) 0 top repeat-x;
+}
+
+.close{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #dcdcdc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+.close input{
+    width: 100%;
+    height: 3rem;
+    color: #666666;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    background-color: #f9f9f9;
+    font: "微软雅黑" "Regular" 1.2rem;
+}

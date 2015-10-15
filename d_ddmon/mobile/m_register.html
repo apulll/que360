@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/content/m-social.css" rel="stylesheet">
+	<title>欢雀 注册</title>
+</head>
+
+<body class="login-bg">
+	<header class="l-head">
+		<i class="i-back" onclick="history.back();"></i>
+		<a href="m_login.html"><button class="btn" type="button">登录</button></a>
+	</header>
+	<form action="" class="l-form">
+		<div class="phone">
+			<input type="text" id="phone_num" name="phone_num" class="form-control" placeholder="请输入11位手机号" maxlength="11">
+		</div>
+		<div class="code">
+			<input type="text" id="code" name="code" class="form-control" placeholder="请输入短信验证码" maxlength="6">
+			<button class="btn" type="button">获取验证码</button>
+		</div>
+		<div class="password">
+			<input type="password" id="login_ps" name="login_ps" class="form-control" style="width:100%;" placeholder="请设置密码（6-12个字符）" maxlength="12">
+		</div>
+		<p class="l-submit">
+			<button class="btn" type="button">注 册</button>
+			<span>注册即接受《欢雀科技用户使用协议》</span>
+		</p>
+	</form>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script>
+$(function() {
+	var flag = 1;
+	$("#phone_num").focus(function() {
+		if ($("#phone_num").val() == "请输入正确手机号码" || $("#phone_num").val() == "请输入手机号码") {
+			$("#phone_num").removeClass("red").val("");
+			return false;
+		}
+	})
+	$(".code .btn").on("click", function () {
+		if (flag == 1) {
+			$.get("register/code");
+			flag = 0;
+		} else {
+			return 0;
+		}
+		$(this).html("60秒");
+		var counts = setInterval(function () {
+			var $num = $(".code .btn"),
+				num = +$num.html().match(/\d+/)[0];
+			if (num > 1) {
+				$num.html((num -1) + "秒");
+			} else {
+			 flag = 1, $num.html("获取验证码"), clearInterval(counts);
+			}
+		}, 1000);
+	})
+	$("#code").focus(function() {
+		if ($("#code").val() == "请输入验证码") {
+			$("#code").removeClass("red").val("");
+			return false;
+		}
+	})
+	$("#login_ps").focus(function() {
+		if ($("#login_ps").val() == "请输入密码" || $("#login_ps").val() == "请输入6-12个字符") {
+			$("#login_ps").removeClass("red").val("");
+			return false;
+		}
+	})
+	$(".l-submit .btn").on("click", function() {
+		var phone_num_val = $("#phone_num").val(),
+			$login_ps = $("#login_ps"),
+			$code = $("#code"),
+			bool = true;
+		var check_submit = function() {
+			if (!/^1\d{10}$/.test(phone_num_val)) {
+				$("#phone_num").addClass("red").val("请输入正确手机号码");
+				bool = false;
+			}
+			if (phone_num_val == "") {
+				$("#phone_num").addClass("red").val("请输入手机号码");
+				bool = false;
+			}
+			if ($code.val() == "") {
+				$code.addClass("red").attr("type", "text").val("请输入验证码");
+				bool = false;
+			}
+			if ($login_ps.val() == "") {
+				$login_ps.addClass("red").attr("type", "text").val("请输入密码");
+				bool = false;
+			}
+			if (!$login_ps.val().match(/[\w-]{6,12}/)) {
+				$login_ps.addClass("red").attr("type", "text").val("请输入6-12个字符");
+				bool = false;
+			}
+			return bool;
+		};
+		if (check_submit()) {
+			$("form").submit();
+		} else {
+			return false;
+		}
+	})
+})
+</script>
+</html>

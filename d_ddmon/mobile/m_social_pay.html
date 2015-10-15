@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common/global_add.css" rel="stylesheet">
+    <link href="../css/content/social_add.css" rel="stylesheet">
+    <link href="../css/minimal/blue.css" rel="stylesheet">
+    <title>欢雀支付</title>
+</head>
+
+<body>
+    <header class="l_head">
+        <i></i>
+        <p>支付类型</p>
+    </header>
+    <div class="pay_fund">
+        <p class="pay_fund_str">支付金额<p/>
+        <p class="pay_fund_num"><span>4838.00</span>元</p>
+    </div>
+    <div class="pay_choice">
+        <p>选择方式</p>
+        <ul class="zhifubao">
+            <li></li>
+            <li>支付宝钱包支付</li>
+            <li class="zh"><input type="radio" name="select" checked /></li>
+        </ul>
+        <ul class="weixin">
+            <li></li>
+            <li>微信客服端支付</li>
+            <li class="wx"><input type="radio" name="select" /></li>
+        </ul>
+        <input class="btn" type="button" value="立即支付">
+    </div>
+</body>
+<script src="../js/jquery/jquery-1.10.2.js"></script>
+<script src="../js/icheck.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script>
+$(function() {
+    $('.zh input, .wx input').iCheck({
+          radioClass : 'iradio_minimal-blue'
+    });
+});
+
+</script>
+</html>

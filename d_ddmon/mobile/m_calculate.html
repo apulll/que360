@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/content/m-social.css" rel="stylesheet">
+	<title>欢雀 社保计算器</title>
+</head>
+
+<body>
+	<form class="p-content">
+		<p class="p-title">选择城市</p>
+		<select name="" id="">
+			<option value="">请选择服务地区</option>
+		</select>
+		<p class="p-title">社保<label class="i-social open"><input type="checkbox" name="social" value="1" checked hidden></label></p>
+		<div id="forSocial">
+			<!-- <div class="dropdown">
+				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					<span class="btn-html">请选择险种类型</span>
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="socialType">
+					<li data-val="1">社保</li>
+					<li data-val="2">住房公积金</li>
+				</ul>
+			</div>
+			<input type="hidden" name="socialType" value="1"> -->
+			<select name="" id="">
+				<option value="">请选择险种类型</option>
+			</select>
+			<div class="input-group fund-range">
+				<input type="text" class="form-control c-range" id="exampleInputAmount" placeholder="范围值2030~18163">
+				<div class="input-group-addon socialBase" id="">最低基数</div>
+			</div>
+		</div>
+		<p class="p-title">公积金<label class="i-fund open"><input type="checkbox" name="fund" value="1" checked hidden></label></p>
+		<div id="forFund">
+			<div class="social-percent clearfix">
+				<div class="input-group fl">
+					<div class="input-group-addon">公司</div>
+					<!-- <div class="dropdown form-control">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span class="btn-html">5%</span>
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenu2" id="fundCompany">
+							<li data-val="1">5%</li>
+							<li data-val="2">10%</li>
+						</ul>
+					</div>
+					<input type="hidden" name="fundCompany" value="1"> -->
+					<select name="" id="" class="form-control">
+						<option value="">5.00%</option>
+					</select>
+				</div>
+				<div class="input-group fr">
+					<div class="input-group-addon">个人</div>
+					<select name="" id="" class="form-control">
+						<option value="">5.00%</option>
+					</select>
+				</div>
+			</div>
+			<div class="input-group fund-range">
+				<input type="text" class="form-control" id="exampleInputAmount" placeholder="范围值 1808~30271">
+				<div class="input-group-addon socialBase" id="">最低基数</div>
+			</div>
+		</div>
+
+		<div class="c-button">
+			<button class="btn" type="reset">重 置</button>
+			<a href="#pList"><button class="btn btn-cal" type="button">计 算</button></a>
+		</div>
+
+		<div id="calList" class="hide">
+			<p class="c-p-list" id="pList">
+				缴纳明细
+			</p>
+			<table class="">
+				<tbody>
+					<tr class="tr-bg1">
+						<td rowspan="2" style="border-top-left-radius:8px;">缴纳项目</td>
+						<td rowspan="2">基&nbsp;&nbsp;数</td>
+						<td colspan="2" style="border-bottom:2px solid #fff;">个人缴纳</td>
+						<td colspan="2" style="border-bottom:2px solid #fff;">企业缴纳</td>
+						<td rowspan="2" style="border-right:none;border-top-right-radius:8px; ">小计</td>
+					</tr>
+					<tr class="tr-bg1">
+						<td class="td-l-border">缴纳<br>比例</td>
+						<td>金额<br>(元)</td>
+						<td>缴纳<br>比例</td>
+						<td class="td-r-border">金额<br>(元)</td>
+					</tr>
+					<tr>
+						<td class="td-l-border td1">养老保险</td>
+						<td class="td2">8000.00</td>
+						<td class="td2">5.00%</td>
+						<td class="td2">400.00</td>
+						<td class="td2">5.00%</td>
+						<td class="td2">8000.00</td>
+						<td rowspan="7" class="tr-bg td3" style="border:2px solid #fff; border-right:none;">社保小计<br> <span class="orange">1230.00</span>元</td>
+					</tr>
+					<tr class="tr-bg">
+						<td class="td-l-border">失业保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>700.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr>
+						<td class="td-l-border">工伤保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>700.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr class="tr-bg">
+						<td class="td-l-border">生育保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>800.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr>
+						<td class="td-l-border">医疗保险</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>900.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr class="tr-bg">
+						<td class="td-l-border">重大疾病</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>90.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr>
+						<td class="td-l-border">残险金</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>80.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+					</tr>
+					<tr class="tr-bg">
+						<td class="td-l-border">公积金</td>
+						<td>8000.00</td>
+						<td>5.00%</td>
+						<td>3500.00</td>
+						<td>5.00%</td>
+						<td>8000.00</td>
+						<td class="td-r-border" style="border-left:2px solid #fff;">公积金小计<br> <span class="orange">1210.30</span>元</td>
+					</tr>
+					<tr>
+						<td colspan="4" class="td-l-border"></td>
+						<td colspan="3" class="td-r-border">共缴纳合计：<span class="orange bold">2460.00</span>元</td>
+					</tr>
+					<tr class="tr-bg">
+						<td style="border-bottom-left-radius:8px;border-right: 2px solid #fff;"  colspan="4">个人缴纳: <span class="orange">425</span>元</td>
+						<td colspan="3" style="border-bottom-right-radius:8px;">企业缴纳: <span class="orange">923</span>元</td>
+						<!-- <td></td> -->
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="how-use"><a href="#">如何使用“自助社保服务”?</a></p>
+	</form>
+
+</body>
+<script src="../js/zepto.min.js"></script>
+<script>
+$(function() {
+	$(".p-content .p-title label").on("click", function (e) {
+		e.preventDefault();
+		//$(this).toggleClass("open");
+		if ($(this).hasClass("open")) {
+			$(this).removeClass("open").children().prop("checked", false);
+			$(this).parent().next().addClass("hide");
+		} else {
+			$(this).addClass("open").children().prop("checked", true);
+			$(this).parent().next().removeClass("hide");
+		}
+	})
+	$(".dropdown-toggle").on("click", function() {
+		$(this).next("ul").toggle();
+	})
+	$(".dropdown-menu li").on("click", function() {
+		var iName = $(this).parent("ul")[0].id,
+			iVal = $(this).data("val");
+		$(this).parent("ul").toggle();
+		$("input[name=" + iName + "]").val(iVal);
+		$(".dropdown-toggle .btn-html").html(this.innerHTML);
+	})
+	$(".socialBase").on("click", function() {
+		$(this).toggleClass("select");
+	})
+	$(".btn-cal").on("click", function() {
+		$("#calList").toggleClass("hide");
+	})
+})
+</script>
+</html>

@@ -1,0 +1,424 @@
+.grayBg{
+	background: url(../../images/gray-bg.gif) left top repeat;
+}
+.form-control{
+	height: 30px;
+}
+.col-sm-8{
+	width: 390px;
+	padding-right: 0;
+}
+.col-sm-4{
+	width: 185px;
+	padding-right:0;
+	margin-right:20px;
+}
+.col-sm-last{
+	padding-left:0;
+	margin-right:0;
+}
+.social-banner {
+	width: 100%;
+	height: 320px;
+	background: url(../../images/social-banner.jpg) left center no-repeat;
+}
+.social-banner  .container{
+	text-align: center;
+	padding:60px 0 ;
+	position: absolute;
+	width: 100%;
+}
+.social-banner  .container .arr{
+	background: url(../../images/buy-page-sprite.png) left top  no-repeat;
+	width: 60px;
+	height: 57px;
+	position: absolute;
+	left:50%;
+	bottom:-36px;
+	margin-left:-30px;
+}
+.wrap{
+	width: 1198px;
+	margin:70px auto 105px;
+	border: 6px solid #eee;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 50px 52px 82px;
+}
+.wrap-main{
+	width: 100%;
+	display: inline-block;
+}
+.wrap .wrap-con,.wrap-bot .con{
+	float: left;
+	width: 790px;
+	margin-right:52px;
+}
+..wrap-bot .con{
+	margin-right: 0;
+}
+.wrap .wrap-side,.wrap-bot .side{
+	float: right;
+	width: 240px;
+}
+.wrap-bot .side{
+	text-align: right;	
+}
+.wrap .wrap-con .tab {
+	text-align: center;
+	font-size: 0;
+	border-bottom:1px solid #ccc;
+}
+.wrap .wrap-con .tab a{
+	display: inline-block;
+	font:14px/1.5 \5FAE\8F6F\96C5\9ED1;
+	color:#666;
+	border-top:4px solid #fff;
+	border-right:1px solid #fff;
+	border-left:1px solid #fff;
+	padding:5px 25px 6px;
+	background-color: #fff;
+	position: relative;
+	margin:0 5px;
+	font-weight: bold;
+}
+.wrap .wrap-con .tab a:hover,.wrap .wrap-con .tab a.active{
+	border-top:4px solid #6bc30d;
+	border-right:1px solid #ccc;
+	border-left:1px solid #ccc;
+	padding-bottom:5;
+	bottom:-1px;
+	text-decoration: none;
+}
+.wrap .wrap-con .tab-main{
+	display: none;
+}
+.wrap .wrap-con form{
+	padding-top:60px;
+	width: 518px;
+	margin-left:138px;
+}
+.wrap .wrap-con form label{
+	display: inline-block;
+	width:94px;
+	text-align: right;
+	padding-top: 4px;
+}
+.wrap .wrap-con form .form-group{
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom:20px;
+}
+.wrap .wrap-con form  select{
+	color:#ccc;
+}
+.wrap .wrap-con form .form-error{
+	border:2px solid #d11602;
+}
+.wrap .wrap-con form .form-focus{
+	border:2px solid #6bc30d;
+}
+.wrap .wrap-con form input:focus{
+	border:2px solid #6bc30d;
+}
+.wrap .wrap-con .select .div-select{
+	margin-left:52px;
+	width: 128px;
+}
+.wrap .wrap-con  .select .div-select .div-selectlabel{
+	border-left:0;
+	border-radius:0 4px 4px 0  ;
+}
+.wrap .wrap-con  .select .div-select .div-selectcontent{
+	top:29px;
+}
+.wrap .wrap-con i.tit{
+	display: block;
+	position: absolute;
+	left:4px;
+	top:0;
+	padding: 6px 12px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #555;
+	height: 100%;
+	text-align: center;
+	background-color: #eee;
+	border-radius: 4px 0  0 4px;
+	border:1px solid #ccc;
+	border-right: 0;
+	font-style: normal;
+	line-height: 16px;
+}
+.wrap .wrap-con .col-sm-last i.tit{
+	left:0;
+}
+.wrap .wrap-con .scale .col-sm-last .div-select {
+	width: 134px;
+}
+.wrap .wrap-con .form-center{
+	text-align: center;
+}
+.div-select{
+	position: relative;
+}
+.div-selectlabel {
+	border: #d2d2d2 1px solid;
+	padding: 0 10px;
+	cursor: pointer;
+}
+.div-selecttxt {
+	font-size: 14px;
+	color: #ccc;
+	height: 100%;
+	margin-right: 15px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-ms-text-overflow:ellipsis;
+	line-height: 30px;
+}
+.div-select-arr{
+	float: right;
+	width: 9px;
+	height: 9px;
+	margin-top: 12px;
+	background: url(../../images/buy-page-sprite.png) left -231px  no-repeat;
+}
+.div-selectcontent {
+	max-height: 200px;
+	overflow: auto;
+	background: #fff;
+	position: absolute;
+	left:0;
+	top:28px;
+	width: 100%;
+	z-index: 7;
+	display: none;
+}
+.div-selectcontent ul{
+	border: #d2d2d2 1px solid;
+}
+.div-selectcontent li {
+	height: 30px;
+	line-height: 30px;
+	text-indent: 10px;
+}
+.div-selectcontent li.disable{
+	color:#ccc;
+}
+.div-selectcontent li a {
+	font-size: 14px;
+	color: #626262;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.div-selectcontent li.active a {
+	background: #979797;
+	color: #fff;
+}
+.div-selectcontent li a:hover{
+	background:#f3f3f3;
+}
+.switch-btn{
+  float: left;
+  width: 14px;
+  margin-top:4px;
+}
+.switch-btn .div-checkbox{
+	display: block;
+	width: 14px;
+	height: 14px;
+	cursor:pointer;
+	background: url(../../images/buy-page-sprite.png) -22px -224px  no-repeat;
+}
+.has-switch .div-checkbox{
+	background: url(../../images/buy-page-sprite.png) -46px -224px  no-repeat;
+}
+.wrap .wrap-con form .scale{
+	display: none;
+}
+.wrap .wrap-con .total{
+	padding:0px 0 0 105px;
+	font-size: 12px;
+	color:#ff8a00;
+	line-height: 2;
+}
+.wrap .wrap-con .total .num{
+	font-size: 16px;
+	font-weight: bold;
+}
+.wrap .wrap-con .total .unit{
+	color:#666;
+	margin-left:20px;
+}
+.wrap .wrap-con form .btnBox{
+	padding:20px 0 0 105px;
+}
+.wrap .wrap-con .tips{
+	background-color: #f8f8f8;
+	padding:20px;
+	text-align: center;
+	margin-top:40px;
+}
+.wrap .wrap-con .tips p{
+	margin:5px;
+}
+.btn-view{
+	text-align: center;
+	padding:20px;
+}
+.btn-view .btn{
+	background-color: #ff8a00;
+	color:#fff;
+	padding:6px 30px;
+}
+.btn-view .btn:hover{
+	background-color: #ff8a00;
+}
+.wrap .wrap-con .btn-post{
+	background-color: #6bc30d;
+	padding:8px 30px;
+	color:#fff;
+	font-size: 14px;
+}
+.wrap .wrap-con .btn-post:hover{
+	background-color: #7ad815;
+}
+.order,.side{
+	border-top:1px dashed #ccc;
+	padding-top:56px;
+}
+.order .table th,.order .table  td.td-totla{
+	background-color: #6bc30d;
+	color:#fff;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	font-weight: normal;
+	border: 1px solid #498e00;
+}
+.order .table th{
+	padding:3px;	
+}
+.order  .table-bordered{
+	border-color:#498e00;
+	width: 682px;
+	margin-left:64px;
+	margin-bottom:0;
+}
+.order  .table-bordered td{
+	border: 1px solid #ccc; 
+	padding:5px 4px;
+}
+.order .table td .num{
+	display: block;
+}
+.order .table  td.td-totla{
+	padding:17px 0 16px;
+}
+.order .table  td.td-totla .num{
+	font-weight: bold;
+	font-size: 14px;
+	display: inline;
+}
+.wrap .glyphicon ,th .glyphicon{
+	background: none;
+}
+.wrap .glyphicon-calendar{
+	background: url(../../images/buy-page-sprite.png) left -244px  no-repeat;
+	height: 16px;
+}
+th .icon-arrow-left {
+	background:url(../../images/buy-page-sprite.png) -23px -247px no-repeat;
+	height: 16px;	
+}
+th .icon-arrow-right {
+	background:url(../../images/buy-page-sprite.png) -46px -247px no-repeat;
+	height: 16px;	
+}
+.wrap-side-main dl{
+	margin-bottom:0;
+	padding-bottom:5px;
+	border-bottom: 1px dashed #f2f2f2;
+}
+.wrap-side-main dl:last-child{
+	border:0;
+}
+.wrap-side-main dl dt{
+	border-bottom:1px dotted #e8e8e7;
+	padding:10px 10px;
+	margin-bottom:10px;
+	font-size: 12px;
+	color:#999;
+}
+.wrap-side-main dl dt .more{
+	float: right;
+	font-weight: normal;
+	color:#a9a9a9;
+}
+.wrap-side-main dl dd{
+	padding:2px 0;
+}
+.wrap-side-main dl a:hover{
+	color:#67be0a;
+}
+.wrap-side-main dl dd a{
+	display: block;
+	background: url(../../images/buy-page-sprite.png) 10px -146px  no-repeat;
+	color:#a9a9a9;
+	padding:4px 8px 4px 28px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-moz-text-overflow:ellipsis;
+	-webkit-text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-ms-text-overflow:ellipsis;
+}
+.wrap-side-main dl dd a:hover{
+	background-position:  10px -189px;	
+}
+.wrap-bot{
+	width: 100%;
+	display: inline-block;
+	padding-top:16px;
+}
+.order  h2{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom:45px;
+	margin:0;
+}
+.order .icon-details{
+	background: url(../../images/buy-page-sprite.png) 5px -114px  no-repeat;
+	padding-left:36px;
+	min-height: 21px;
+
+	text-align: left;
+	display: inline-block;	
+}
+.wrap-bot .side h2{
+	font-size: 16px;
+	padding-bottom:22px;
+	text-align: center;
+}
+.wrap-bot .side h2 .icon-auto{
+	background: url(../../images/buy-page-sprite.png) 5px -69px  no-repeat;	
+	padding-left:40px;
+	min-height: 24px;
+	line-height: 22px;
+	text-align: left;
+	display: inline-block;
+}
+.wrap-bot .side .box img{
+	margin-right:42px;
+	
+}

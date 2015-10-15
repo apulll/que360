@@ -1,0 +1,188 @@
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+    html {
+        font-size: 14px
+    }
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px
+    }
+}
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px
+    }
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+    color: #666;
+}
+.l_head p{
+
+    height: 1.7rem;
+    padding-top: 1.3rem;
+    text-align: center;
+    font: 1rem "microsoft yahei";
+    font: 1.3rem "microsoft yahei";
+}
+.l_head a{
+    position: absolute;
+    right: 3.91%;
+    top: 0.75rem;
+    display: inline-block;
+    width: 2.35rem;
+    height: 2.6rem;
+    background-image:url(../../images/home.jpg);
+    float: right;
+    background-size: cover;
+}
+.state{
+    width: 100%;
+    height: 27.5rem;
+    padding: 2.75rem 5.47% 10rem 5.47%;
+}
+.state p:nth-of-type(1){
+    padding-left: 0.2rem;
+    position: relative;
+    height: 1.5rem;
+    font: 1.3rem "microsoft yahei";
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+.state p:nth-of-type(1) i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.6rem;
+    background-image: url(../../images/social_person1.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 0.6rem;
+}
+.condition{
+    /* height: 5rem; */
+    margin-bottom: 2.5rem;
+}
+.condition li{
+    /* height: 1.3rem; */
+    margin-bottom: 0.25rem;
+    font: 1.2rem "微软雅黑";
+    padding-left: 0.2rem;
+}
+.condition li i{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #3ec36b;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+.state p:nth-of-type(2){
+    position: relative;
+    height: 1.5rem;
+    font: 1.2rem "microsoft yahei";
+    line-height: 1.5rem;
+    padding-left: 1.75rem;
+}
+.state p:nth-of-type(2) i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.6rem;
+    background-image: url(../../images/social_person2.jpg);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 0.6rem;
+}
+.go{
+    border: none;
+}
+.go input{
+    width: 81.25%;
+    height: 3.25rem;
+    border: 1px solid #3ec36b;
+    background-color: #3ec36b;
+    border-radius: 5px;
+    margin-left: 9.375%;
+    font: 1.2rem "微软雅黑";
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.check{
+    display: inline-block;
+    width: 100%;
+    /* margin-left: 26.56%; */
+    margin-bottom: 10rem;
+    font: 0.9rem "微软雅黑";
+    text-align: center;
+    -webkit-appearance:none;
+}
+/* .check input{
+    vertical-align: text-middle;
+    width: 0.9rem;
+    height: 0.9rem;
+} */
+.check a {
+    display: inline-block;
+    color: #3ec36b;
+    text-decoration: none;
+}
+.way{
+    display: inline-block;
+    width: 81.25%;
+    height: 3rem;
+    border: 1px solid #f9f9f9;
+    text-align: center;
+    padding-top: 1rem;
+    border-radius: 5px;
+    margin-left: 9.375%;
+    font: 1rem "微软雅黑";
+}
+
+
+/* 以下修改 */
+.iradio_square-green {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+    margin-top: -0.1rem;
+    padding: 0;
+    width: 0.9rem;
+    height: 0.9rem;
+    background: url(check.png) no-repeat;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+}
+
+ /* 以下修改 */
+    .icheckbox_square-green.hover {
+        background-position: 0 0;
+    }
+    /* 以下修改 */
+    .icheckbox_square-green.checked {
+        display: inline-block;
+        *display: inline;
+        vertical-align: middle;
+        margin-right: 0.1rem;
+        margin-top: -0.1rem;
+        padding: 0;
+        width: 0.9rem;
+        height: 0.9rem;
+        background: url(checkedd.png) no-repeat;
+        border: none;
+        cursor: pointer;
+        background-size: cover;
+    }

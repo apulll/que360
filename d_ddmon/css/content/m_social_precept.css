@@ -1,0 +1,261 @@
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px
+    }
+}
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px
+    }
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+    color: #666;
+}
+.l_head p{
+    height: 1.7rem;
+    padding-top: 1.3rem;
+    text-align: center;
+    font: 1rem "microsoft yahei";
+    font: 1.3rem "microsoft yahei";
+}
+.p-content {
+    padding: 0 1.4rem;
+}
+.p-content .p-title {
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+.p-content .p-title label {
+    float: right;
+    margin-bottom: 0;
+    width: 4.2rem;
+    height: 2.6rem;
+    background-image: url(../../images/m-cal-close.png);
+    background-size: cover;
+}
+.p-content .p-title .open {
+    background-image: url(../../images/m-cal-open.png);
+}
+.p-content .c-range {
+    /* margin: 1rem 0 .5rem; */
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    width: 100%;
+    height: 3.3rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    border-right: none;
+}
+.p-content .social-percent .input-group {
+    width: 47%;
+}
+.p-content .fund-range {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+}
+#fund-range{
+    margin-bottom: 10.5rem;
+}
+.p-content .fund-range input {
+    /* width: 20.8rem; */
+    height: 3.3rem;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: none;
+}
+.p-content .socialBase {
+    width: 8.6rem;
+    letter-spacing: .1em;
+    background-color: #fff;
+    cursor: pointer;
+}
+.p-content .select {
+    background: #fff url(../../images/m-social-base.png) right bottom no-repeat;
+    color: #38b863;
+    background-size: 2.1rem;
+}
+#exampleInputAmount{
+    height: 3.35rem;
+    border:none;
+    font: 1.2rem "微软雅黑";
+    color: #c3c3c3;
+}
+.p-content select {
+    padding-left: 10px;
+    width: 100%;
+    height: 3.35rem;
+    border-color: #ccc;
+    color: #c3c3c3;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.p-content .input-group-addon {
+    font-size: 1rem;
+    border: none;
+}
+.input-group-addon {
+    position: relative;
+}
+.input-group-addon  i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 2.15rem;
+    height: 2.15rem;
+    background-image: url(../../images/select.png);
+    background-size: cover;
+}
+.input-group-addon  span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 2.15rem;
+    height: 2.15rem;
+    background-image: url(../../images/select.png);
+    background-size: cover;
+}
+.input-group .form-control:not(:first-child):not(:last-child){
+    border-radius: 5px;
+}
+.c-button{
+    width: 95%;
+    position: absolute;
+    bottom: 10.5rem;
+}
+.p-content .c-button button {
+    width: 45%;
+    height: 3rem;
+    font-size: 1.1rem;
+    background-color: #eee;
+}
+.p-content .c-button .btn-cal {
+    float: right;
+    background-color: #38b863;
+    color: #fff;
+}
+.p-content .dropdown-toggle {
+    width: 100%;
+    height: 3.3rem;
+    text-align: left;
+    background-color: #fff;
+}
+.p-content .dropdown-toggle .caret {
+    float: right;
+
+    border-width: 0.8rem;
+    border-top-color: #666;
+    margin-top: .5rem;
+}
+.p-content .dropdown-menu {
+    width: 100%;
+}
+.p-content .dropdown-menu li {
+    padding: 4px 8px;
+    width: 100%;
+}
+.c-p-list {
+    margin-top: 5.1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #333;
+}
+.how-use {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+.how-use a {
+    font-size: 1rem;
+    color: #494949;
+}
+
+
+#forSocial {
+    position: relative;
+}
+#forSocial i{
+    position: absolute;
+    right: 3.125%;
+    top: 1.25rem;
+    display: inline-block;
+    width: 1.45rem;
+    height: 0.75rem;
+    background-image: url(../../images/icondown.png);
+    background-size: cover;
+}
+#left{
+    position: relative;
+    z-index: 1;
+}
+#left i{
+    position: absolute;
+    right: 3.125%;
+    top: 1.25rem;
+    display: inline-block;
+    width: 1.45rem;
+    height: 0.75rem;
+    background-image: url(../../images/icondown.png);
+    background-size: cover;
+    z-index: 2;
+}
+#right{
+    position: relative;
+    z-index: 1;
+}
+#right i{
+    position: absolute;
+    right: 3.125%;
+    top: 1.25rem;
+    display: inline-block;
+    width: 1.45rem;
+    height: 0.75rem;
+    background-image: url(../../images/icondown.png);
+    background-size: cover;
+    z-index: 2;
+}
+
+
+.input-group {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-control{
+    border: none;
+    border-radius: 5px;
+    -webkit-appearance:none;
+}
+.select_kinds{
+    -webkit-appearance:none;
+    font: 1.2rem "微软雅黑";
+    color: #c3c3c3;
+}
+.input-group-addon:first-child {
+    border-right: 1px solid #ccc;
+    border-radius: 5px;
+}
+.input-group-addon:last-child {
+    border: none;
+    border-left: 1px solid #ccc;
+    border-radius: 5px;
+    font: 1.2rem "微软雅黑";
+    color: #c3c3c3;
+}

@@ -1,0 +1,75 @@
+
+.aboutus 
+{
+    color:#666;
+}
+.aboutus .pull-left
+{
+     border:1px solid #ccc;
+     margin:0 20px 0 0;
+     padding:0 0 30px;
+     height:628px;
+}
+ .aboutus .pull-left ul
+{
+    border-left:1px solid #ccc;
+    margin:42px 0 0 50px;
+    height:560px;
+}
+.aboutus .pull-left ul li
+{
+    height:24px;
+    line-height:1;
+    padding:0 0 0 40px;
+    margin:0 0 50px -9px;
+    background:url(../../images/content/about_bg.png) no-repeat;
+    cursor:pointer;
+}
+.aboutus .pull-left ul li a
+{
+    color:#999;
+}
+.aboutus .pull-left ul li.active,.aboutus .pull-left ul li:hover
+{
+    background-position: 0 -80px;
+}
+.aboutus .pull-left ul li.active a,.aboutus .pull-left ul li:hover a
+{
+    color:#00c7d1;
+}
+.aboutus .pull-right div.info
+{
+    position:relative;
+    padding:35px 0 45px 45px;
+    margin:0 0 46px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border-top:none;
+}
+.aboutus .pull-right div.info div.color-box
+{
+    width:48px;
+    height:48px;
+    top:0;
+    left:0;
+}
+.aboutus .pull-right div.info div.color-box.st1
+{
+    background-color:#006670;
+}
+.aboutus .pull-right div.info div.color-box.st2
+{
+    background-color:#ccc;
+}
+.aboutus .pull-right div.info ul 
+{
+    margin-bottom:30px;
+}
+.aboutus .pull-right div.info ul li
+{
+    margin-bottom:10px;
+}
+.aboutus .pull-right div.info hr
+{
+    margin:45px 0;
+}

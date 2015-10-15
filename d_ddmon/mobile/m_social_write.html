@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common/global_add.css" rel="stylesheet">
+    <link href="../css/content/m_social_write.css" rel="stylesheet">
+    <link href="../css/content/m_social_area.css" rel="stylesheet">
+    
+    <title>欢雀填写订单</title>
+</head>
+
+<body>
+    <header class="l_head">
+        <i></i>
+        <p>填写订单</p>
+        <a></a>
+    </header>
+    <div class="main">
+        <a class="message" href="javascript:void(0)">参保地<span>请选择参保地</span><i></i></a>
+        <a class="message" href="./m_social_precept.html">参保方案<span>请设置参保方案</span><i></i></a>
+        <a class="message" href="./m_social_select.html">参保人<span>新建参保人</span><i></i></a>
+        <a class="message" href="./m_social_date.html">参保月份<span>请选择要参保的月份</span><i></i></a>
+        <p id="tj"><input type="button" value="提交订单" /></p>
+    </div>
+    <!-- mask -->
+
+    <!-- 城市 -->
+    <div class="sidebar-content">
+        <div class="sidebar-header region-title">
+            <span id="region-back-arrow" class="region-title-back" data-level="0"><i class=""></i></span><span class="region-title-name">选择参保地</span>
+        </div>
+        <div class="sidebar-items-container region-list-group">
+            <div class="spacer44"></div>
+            <div class="region-wrapper">
+                <ul id="jdDeliverList1" level="1" class="sidebar-list sidebar-categories region-list cur">
+                    <li class="checked" id="1"><i class="tick"></i>
+                        <a name="region1"></a><span> 北京</span></li>
+                    <li id="2"><i class="tick"></i>
+                        <a name="region2"></a><span> 上海</span></li>
+                    <li id="3"><i class="tick"></i>
+                        <a name="region3"></a><span> 天津</span></li>
+                    <li id="4"><i class="tick"></i>
+                        <a name="region4"></a><span> 重庆</span></li>
+                    <li id="5"><i class="tick"></i>
+                        <a name="region5"></a><span> 河北</span></li>
+                    <li id="6"><i class="tick"></i>
+                        <a name="region6"></a><span> 山西</span></li>
+                    <li id="7"><i class="tick"></i>
+                        <a name="region7"></a><span> 河南</span></li>
+                    <li id="8"><i class="tick"></i>
+                        <a name="region8"></a><span> 辽宁</span></li>
+                    <li id="9"><i class="tick"></i>
+                        <a name="region9"></a><span> 吉林</span></li>
+                    <li id="10"><i class="tick"></i>
+                        <a name="region10"></a><span> 黑龙江</span></li>
+                    <li id="11"><i class="tick"></i>
+                        <a name="region11"></a><span> 内蒙古</span></li>
+                    <li id="12"><i class="tick"></i>
+                        <a name="region12"></a><span> 江苏</span></li>
+                    <li id="13"><i class="tick"></i>
+                        <a name="region13"></a><span> 山东</span></li>
+                    <li id="14"><i class="tick"></i>
+                        <a name="region14"></a><span> 安徽</span></li>
+                    <li id="15"><i class="tick"></i>
+                        <a name="region15"></a><span> 浙江</span></li>
+                    <li id="16"><i class="tick"></i>
+                        <a name="region16"></a><span> 福建</span></li>
+                    <li id="17"><i class="tick"></i>
+                        <a name="region17"></a><span> 湖北</span></li>
+                    <li id="18"><i class="tick"></i>
+                        <a name="region18"></a><span> 湖南</span></li>
+                    <li id="19"><i class="tick"></i>
+                        <a name="region19"></a><span> 广东</span></li>
+                    <li id="20"><i class="tick"></i>
+                        <a name="region20"></a><span> 广西</span></li>
+                    <li id="21"><i class="tick"></i>
+                        <a name="region21"></a><span> 江西</span></li>
+                    <li id="22"><i class="tick"></i>
+                        <a name="region22"></a><span> 四川</span></li>
+                    <li id="23"><i class="tick"></i>
+                        <a name="region23"></a><span> 海南</span></li>
+                    <li id="24"><i class="tick"></i>
+                        <a name="region24"></a><span> 贵州</span></li>
+                    <li id="25"><i class="tick"></i>
+                        <a name="region25"></a><span> 云南</span></li>
+                    <li id="26"><i class="tick"></i>
+                        <a name="region26"></a><span> 西藏</span></li>
+                    <li id="27"><i class="tick"></i>
+                        <a name="region27"></a><span> 陕西</span></li>
+                    <li id="28"><i class="tick"></i>
+                        <a name="region28"></a><span> 甘肃</span></li>
+                    <li id="29"><i class="tick"></i>
+                        <a name="region29"></a><span> 青海</span></li>
+                    <li id="30"><i class="tick"></i>
+                        <a name="region30"></a><span> 宁夏</span></li>
+                    <li id="31"><i class="tick"></i>
+                        <a name="region31"></a><span> 新疆</span></li>
+                    <li id="32"><i class="tick"></i>
+                        <a name="region32"></a><span> 台湾</span></li>
+                    <li id="42"><i class="tick"></i>
+                        <a name="region42"></a><span> 香港</span></li>
+                    <li id="43"><i class="tick"></i>
+                        <a name="region43"></a><span> 澳门</span></li>
+                    <li id="84"><i class="tick"></i>
+                        <a name="region84"></a><span> 钓鱼岛</span></li>
+                </ul>
+            </div>
+            <div class="loading-mask" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1); display: none;"></div>
+        </div>
+    </div>
+    
+</body>
+<script src="../js/zepto.min.js"></script>
+<script>
+$(function() {
+});
+</script>
+</html>

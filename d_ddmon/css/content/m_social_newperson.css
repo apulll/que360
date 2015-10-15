@@ -1,0 +1,86 @@
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+    html {
+        font-size: 14px
+    }
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px
+    }
+}
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px
+    }
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+    color: #666;
+}
+p{
+    padding-left: 3.91%;
+    padding-right: 3.91%;
+    font: 1.2rem "微软雅黑";
+    margin: 0;
+}
+.l_head p{
+    height: 1.7rem;
+    padding-top: 1.3rem;
+    text-align: center;
+    font: 1rem "microsoft yahei";
+    font: 1.3rem "microsoft yahei";
+}
+.main{
+    width: 100%;
+    height: 47.5rem;
+    background-color: #ececec;
+    padding-top: 0.8rem;
+}
+.social_message{
+    width: 100%;
+    height: 10.25rem;
+    background-color: #fff;
+    border-top: 1px solid #d2d0d0;
+}
+.social_message p{
+    width: 100%;
+    height: 3.4rem;
+    border-bottom: 1px solid #d2d0d0;
+    padding: 0 3.9%;
+    line-height: 3.35rem;
+}
+.social_message input{
+    float: right;
+    width: 92%;
+    height: 3.3rem;
+    font-size: 1.2rem;
+    color: #cacaca;
+    border: 0;
+    text-align: right;
+}
+.tj{
+    width: 81.25%;
+    height: 3rem;
+    border: 1px solid #3ec36b;
+    background-color: #3ec36b;
+    line-height: 3rem;
+    margin-top: 5.5rem;
+    margin-left: 9.375%;
+    border-radius: 5px;
+    padding: 0;
+}
+.tj input{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #3ec36b;
+    background-color: #3ec36b;
+    border-radius: 5px;
+    font: 1.2rem "微软雅黑";
+    color: #fff;
+}

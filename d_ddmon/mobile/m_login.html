@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/content/m-social.css" rel="stylesheet">
+	<title>欢雀 登录</title>
+</head>
+
+<body class="login-bg">
+	<header class="l-head">
+		<a href="m_register.html"><button class="btn" type="button">快速注册</button></a>
+	</header>
+	<form action="" class="l-form">
+		<div class="phone">
+			<input type="text" id="phone_num" name="phone_num" class="form-control" placeholder="请输入手机号/邮箱" >
+		</div>
+		<div class="password">
+			<input type="password" id="login_ps" name="login_ps" class="form-control" placeholder="请输入密码" maxlength="12" style="border-top:none;">
+			<i class="close"></i>
+			<a href="#" class="forgetPass">忘记密码</a>
+		</div>
+		<p class="l-submit">
+			<button class="btn" type="button">登 录</button>
+		</p>
+	</form>
+</body>
+<script src="../js/zepto.min.js"></script>
+<script>
+$(function() {
+	$("#login_ps").on("input", function() {
+		if (this.value.length > 0) {
+			$(".password .close").show();
+		} else {
+			$(".password .close").hide();
+		}
+	})
+	$(".password .close").on("click", function (e) {
+		$("#login_ps").val("");
+		$(".password .close").hide();
+	})
+	
+	$("#phone_num").focus(function() {
+		if ($("#phone_num").val() == "请输入正确手机号或邮箱" || $("#phone_num").val() == "请输入手机号或邮箱") {
+			$("#phone_num").removeClass("red").val("");
+			return false;
+		}
+	})
+	$("#login_ps").focus(function() {
+		if ($("#login_ps").val() == "请输入密码" || $("#login_ps").val() == "请输入6-12个字符") {
+			$("#login_ps").removeClass("red").val("");
+			return false;
+		}
+	})
+	$(".l-submit .btn").on("click", function() {
+		var phone_num_val = $("#phone_num").val(),
+			$login_ps = $("#login_ps"),
+			bool = true;
+		var check_submit = function() {
+			if (!(/^1\d{10}$/.test(phone_num_val) || /^\w+@.+\.\w+$/.test(phone_num_val))) {
+				$("#phone_num").addClass("red").val("请输入正确手机号或邮箱");
+				bool = false;
+			}
+			if (phone_num_val == "") {
+				$("#phone_num").addClass("red").val("请输入手机号或邮箱");
+				bool = false;
+			}
+			if ($login_ps.val() == "") {
+				$login_ps.addClass("red").attr("type", "text").val("请输入密码");
+				bool = false;
+			}
+			if (!$login_ps.val().match(/[\w-]{6,12}/)) {
+				$login_ps.addClass("red").attr("type", "text").val("请输入6-12个字符");
+				bool = false;
+			}
+			return bool;
+		};
+		if (check_submit()) {
+			$("form").submit();
+		} else {
+			return false;
+		}
+	})
+})
+</script>
+</html>

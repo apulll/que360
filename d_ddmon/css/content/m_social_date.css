@@ -1,0 +1,121 @@
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+@media screen and (min-width:375px) and (max-width:479px) {
+    html {
+        font-size: 14px
+    }
+}
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 16px
+    }
+}
+@media screen and (min-width:640px) {
+    html {
+        font-size: 20px
+    }
+}
+body {
+    height: 100%;
+    margin: auto;
+    font-family: "Microsoft YaHei", "黑体", Arial, sans-serif;
+    color: #666;
+}
+p{
+    padding-left: 3.91%;
+    padding-right: 3.91%;
+    font: 1.2rem "微软雅黑";
+}
+.l_head p{
+    height: 1.7rem;
+    padding-top: 1.3rem;
+    text-align: center;
+    font: 1rem "microsoft yahei";
+    font: 1.3rem "microsoft yahei";
+}
+.all_month{
+    width: 100%;
+    height: 24.5rem;
+    padding: 1.25rem 3.9% 0.65rem 3.9%;
+}
+.all_month a{
+    position: relative;
+    display: block;
+    width: 23.22%;
+    height: 6.75rem;
+    border: 1px solid #dcdcdc;
+    margin: 0 2.33% 0.6rem 0;
+    float: left;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 6.75rem;
+    font-size: 1.2rem;
+    font-family: "微软雅黑";
+    color: #666666;
+}
+.all_month a.right{
+    margin-right: 0;
+}
+.all_month a p{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666666;
+}
+.all_month a i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 2.05rem;
+    height: 2.05rem;
+    background-image: url(../../images/selected.png);
+    background-size: cover;
+}
+.tt{
+    position: relative;
+    height: 1.2rem;
+    margin-left: 3.91%;
+    margin-bottom: 0;
+    padding-left: 3.75%;
+    font: 1.2rem "微软雅黑";
+    color: #38b863;
+    line-height: 1.2rem
+}
+.tt i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../../images/lamp.png);
+    background-size: cover;
+}
+.tj{
+    width: 81.25%;
+    height: 3rem;
+    border: 1px solid #3ec36b;
+    background-color: #3ec36b;
+    line-height: 3rem;
+    margin-top: 4.7rem;
+    margin-left: 9.375%;
+    border-radius: 5px;
+    padding: 0;
+}
+.tj input{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #3ec36b;
+    background-color: #3ec36b;
+    border-radius: 5px;
+    font: 1.2rem "微软雅黑";
+    color: #fff;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common/global_add.css" rel="stylesheet">
+    <link href="../css/content/m_social_person.css" rel="stylesheet">
+    <link href="../css/square/green.css" rel="stylesheet">
+    <title>欢雀个人</title>
+</head>
+
+<body>
+    <header class="l_head">
+        <i></i>
+        <p>个人购买社保</p>
+        <a></a>
+    </header>
+    <div class="state">
+        <p><i></i>&nbsp;&nbsp;&nbsp;&nbsp;自助购买社保说明</p>
+        <ul class="condition">
+            <li><i></i>请准备好参保人资料，如姓名、手机号、身份证号等</li>
+            <li><i></i>请根据参保底政策，只能从当月或下个月开始购买社保</li>
+            <li><i></i>参保费按当地社保政策来缴纳，欢雀网只收费服务费</li>
+        </ul>
+        <p><i></i>使用个人账户购买社保，同一个订单里同时为多个参保人购买，则多人参保人的参保地基数必须相同；如不同建议分成多个订单或使用企业账号购买。</p>
+    </div>
+    <p class="go"><input type="button" value="立即购买" /></p>
+    <p class="check"><input type="checkbox" /><i></i>已阅读并同意<a>《自助社保协议》</a></p>
+    <p class="way">如何使用企业账号？请咨询400-628-0101</p>
+</body>
+<script src="../js/jquery/jquery-1.10.2.js"></script>
+<script src="../js/icheck.js"></script>
+<script src="../js/zepto.min.js"></script>
+<script>
+$(function() {
+    $('.check input').iCheck({
+          hoverClass: 'hover',
+          checkboxClass : 'icheckbox_square-green',
+          //increaseArea : '20%'
+    });
+});
+</script>
+</html>
